@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\ASS_3.dir\XO_game\XO_Classes.cpp.obj: dyndep
+
+build CMakeFiles\ASS_3.dir\XO_game\XO_Demo.cpp.obj: dyndep
+
