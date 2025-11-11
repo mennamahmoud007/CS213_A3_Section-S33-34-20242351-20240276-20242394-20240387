@@ -15,7 +15,7 @@ using namespace std;
 
 /**
  * @class X_O_Board
- * @brief Represents the Tic-Tac-Toe game board.
+ * @brief Represents the Tic-Tac-Toe game board.    
  *
  * This class inherits from the generic `Board<char>` class and implements
  * the specific logic required for the Tic-Tac-Toe (X-O) game, including
@@ -75,7 +75,7 @@ public:
  * @brief User Interface class for the X-O (Tic-Tac-Toe) game.
  *
  * Inherits from the generic `UI<char>` base class and provides
- * X-O–specific functionality for player setup and move input.
+ * X-Oï¿½specific functionality for player setup and move input.
  *
  * @see UI
  */
