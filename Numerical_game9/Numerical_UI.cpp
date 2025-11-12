@@ -36,36 +36,30 @@ void NumericalUI::display_board(const NumericBoard& board) const {
     cout << endl;
 }
 
-
 Player<int>* NumericalUI::create_player(string& name, int symbol, PlayerType type) {
     cout << "Creating " << (type == PlayerType::HUMAN ? "human" : "computer")
-         << " player: " << name << " (" << symbol << ")\n";
+        << " player: " << name << " (" << symbol << ")\n";
     return new Player<int>(name, symbol, type);
 }
 
-
 Move<int>* NumericalUI::get_move(Player<int>* player) {
     int x, y, val;
-
-    if (player->get_type() == PlayerType::HUMAN)
-    {
+    if (player->get_type() == PlayerType::HUMAN) {
         cout << "\nEnter row (0-2), column (0-2), and number (1-9): ";
         cin >> x >> y >> val;
     }
-    else
-    {
+    else {
         Board<int>* board = player->get_board_ptr();
         x = rand() % board->get_rows();
         y = rand() % board->get_columns();
         val = rand() % 9 + 1;
     }
-
     return new Move<int>(x, y, val);
 }
 
-
 void NumericalUI::print_game_result(NumericBoard& board) {
     cout << "Game over!\n";
-    if(board.is_draw(nullptr)) cout << "It's a draw!\n";
+    if (board.is_draw(nullptr)) cout << "It's a draw!\n";
     else cout << "We have a winner!\n";
 }
+
