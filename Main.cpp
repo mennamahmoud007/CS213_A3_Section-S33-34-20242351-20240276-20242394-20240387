@@ -1,54 +1,77 @@
 #include <iostream>
 #include <cstdlib>
+#include "Numerical_game9/Numerical_PlayManagement.h"
+#include "XO_game/XO_Classes.h"
 
 using namespace std;
 
 void playNumericalTTT();
 void playXOGame();
+void displayMainMenu();
+void clearScreen();
 
 int main() {
     srand(time(0));
     int choice;
 
     do {
-        cout << "==============================\n";
-        cout << "       GAME COLLECTION        \n";
-        cout << "==============================\n";
-        cout << "1. Play X-O Game\n";
-        cout << "2. Play Numerical Tic-Tac-Toe\n";
-        cout << "0. Exit\n";
-        cout << "Enter your choice: ";
+        displayMainMenu();
+        cout << "Enter your choice (0-2): ";
         cin >> choice;
 
         switch (choice) {
         case 1:
+            clearScreen();
+            cout << " Starting X-O Game...\n" << endl;
             playXOGame();
             break;
         case 2:
+            clearScreen();
+            cout << " Starting Numerical Tic-Tac-Toe...\n" << endl;
             playNumericalTTT();
             break;
         case 0:
-            cout << "Thanks for playing! Goodbye!\n";
+            cout << "\n Thanks for playing! Goodbye!\n";
             break;
         default:
-            cout << "Invalid choice! Please try again.\n";
+            cout << " Invalid choice! Please enter 0, 1, or 2.\n";
         }
 
-        cout << endl;
+        if (choice != 0) {
+            cout << "\nPress Enter to continue...";
+            cin.ignore();
+            cin.get();
+            clearScreen();
+        }
     } while (choice != 0);
 
     return 0;
 }
 
+void displayMainMenu() {
+    cout << "=========================================\n";
+    cout << "                GAME MENU                \n";
+    cout << "=========================================\n";
+    cout << "  1.  X-O Game (Classic Tic-Tac-Toe)     \n";
+    cout << "  2.  Numerical Tic-Tac-Toe              \n";
+    cout << "  0.  Exit                               \n";
+    cout << "=========================================\n";
+}
+
+void clearScreen() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
 void playNumericalTTT() {
-#include "Numerical_game9/Numerical_PlayManagement.h"
     NumericalPlayManagement game;
     game.run();
 }
 
 void playXOGame() {
-#include "XO_game/XO_Classes.h"
-
     X_O_Board* board = new X_O_Board();
     XO_UI* ui = new XO_UI();
     Player<char>** players = ui->setup_players();
