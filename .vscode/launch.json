@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387",
-      "program": "C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/build/Debug/outDebug",
+      "cwd": "${workspaceFolder}/Main.exe",
+      "program": "${workspaceFolder}/Main.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

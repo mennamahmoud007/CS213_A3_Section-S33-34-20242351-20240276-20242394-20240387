@@ -21,6 +21,15 @@ public:
 
     vector<int> available_nums(bool unused = false) const;
     vector<pair<int, int>> available_cells() const;
+
+
+
+    int get_cell(int r, int c) const {
+        return board[r][c];
+    }
+    vector<pair<int,int>> get_winning_positions() const;
+
+
 };
 
-// #endif 
+// #endif

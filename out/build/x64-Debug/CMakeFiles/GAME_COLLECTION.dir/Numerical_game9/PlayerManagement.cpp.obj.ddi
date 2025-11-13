@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\GAME_COLLECTION.dir\\Numerical_game9\\PlayerManagement.cpp.obj",
+            "outputs": [
+                "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\out\\build\\x64-Debug\\vc140.pdb",
+                "CMakeFiles\\GAME_COLLECTION.dir\\Numerical_game9\\PlayerManagement.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

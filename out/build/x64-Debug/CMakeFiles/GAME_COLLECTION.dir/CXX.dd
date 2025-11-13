@@ -1,0 +1,19 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\GAME_COLLECTION.dir\Main.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\Numerical_game9\Numerical_Board.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\Numerical_game9\Numerical_Demo.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\Numerical_game9\Numerical_PlayManagement.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\Numerical_game9\Numerical_Player.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\Numerical_game9\Numerical_UI.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\Numerical_game9\PlayerManagement.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\XO_game\XO_Classes.cpp.obj: dyndep
+
+build CMakeFiles\GAME_COLLECTION.dir\XO_game\XO_Demo.cpp.obj: dyndep
+

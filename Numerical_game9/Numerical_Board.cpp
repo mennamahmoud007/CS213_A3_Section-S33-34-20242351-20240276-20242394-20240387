@@ -1,5 +1,9 @@
 #include "Numerical_Board.h"
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <utility>
+#include <iomanip>
+
 
 using namespace std;
 
@@ -26,10 +30,10 @@ bool NumericBoard::update_board(Move<int>* move) {
         cout << "🚫 Invalid cell: row and column must be between 0-2.\nTry again." << endl;
         return false;
     }
-    
+
     if(board[x][y] != '.'){
         cout << "‼️ This Cell is already taken.\nTry again." << endl;
-        return false; 
+        return false;
     }
 
     if(val > 9 || val < 1){
@@ -50,9 +54,9 @@ bool NumericBoard::update_board(Move<int>* move) {
 
 bool NumericBoard::line_is_win(int a, int b, int c) const {
     if (a == '.' || b == '.' || c == '.')
-        return false;           
+        return false;
     if(a + b + c == 15) return true;
-    else return false;   
+    else return false;
 }
 
 bool NumericBoard::is_win(Player<int>*){
@@ -80,7 +84,7 @@ bool NumericBoard::is_lose(Player<int>*) {
 
 bool NumericBoard::is_draw(Player<int>*) {
     if (n_moves < 9) return false;
-    if (is_win(nullptr)) return false; 
+    if (is_win(nullptr)) return false;
     return true;
 }
 
@@ -105,3 +109,36 @@ vector<pair<int,int>> NumericBoard::available_cells() const {
     return res;
 }
 
+vector<pair<int,int>> NumericBoard::get_winning_positions() const {
+    vector<pair<int,int>> positions;
+
+    for (int r = 0; r < 3; ++r) {
+        if (line_is_win(board[r][0], board[r][1], board[r][2])) {
+            positions.push_back({r, 0});
+            positions.push_back({r, 1});
+            positions.push_back({r, 2});
+            return positions;
+        }
+    }
+    for (int c = 0; c < 3; ++c) {
+        if (line_is_win(board[0][c], board[1][c], board[2][c])) {
+            positions.push_back({0, c});
+            positions.push_back({1, c});
+            positions.push_back({2, c});
+            return positions;
+        }
+    }
+    if (line_is_win(board[0][0], board[1][1], board[2][2])) {
+        positions.push_back({0,0});
+        positions.push_back({1,1});
+        positions.push_back({2,2});
+        return positions;
+    }
+    if (line_is_win(board[0][2], board[1][1], board[2][0])) {
+        positions.push_back({0,2});
+        positions.push_back({1,1});
+        positions.push_back({2,0});
+        return positions;
+    }
+    return positions;
+}
