@@ -3,7 +3,10 @@ project(ASS_3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-
-file(GLOB SOURCES "XO_game/*.cpp")
-
-add_executable(ASS_3 ${SOURCES})
+add_executable(ASS_3 
+    Main.cpp
+    XO_game/XO_Classes.cpp
+    Numerical_game9/Numerical_Board.cpp
+    Numerical_game9/Numerical_UI.cpp
+    Numerical_game9/Numerical_PlayManagement.cpp
+)
