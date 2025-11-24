@@ -4,10 +4,11 @@
 #include "XO/XO_Classes.h"
 #include "Numerical9/Numerical_Board.h"
 #include "Numerical9/Numerical_UI.h"
+#include "Misere/Misere_Board.h"
+#include "Misere/Misere_UI.h"
+
 
 using namespace std;
-
-
 
 /*------------------------------------------------------ XO Game --------------------------------------------------------------*/
 void run_XO() {
@@ -19,6 +20,23 @@ void run_XO() {
 	GameManager<char> x_o_game(xo_board, players, game_ui);
 	x_o_game.run();
 	delete xo_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------- Misère Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Misere() {
+	cout << "\nWelcome to Misère Tic-Tac-Toe Game...\n";
+
+	UI<char>* game_ui = new Misere_UI();
+	Board<char>* game_board = new Misere_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> Misere_game(game_board, players, game_ui);
+	Misere_game.run();
+	delete game_board;
 	for (int i = 0; i < 2; ++i) {
 		delete players[i];
 	}
@@ -56,7 +74,8 @@ int main() {
 		cout << "\n=============================\n";
 		cout << "1) XO Game\n";
 		cout << "2) Numerical Tic-Tac-Toe\n";
-		cout << "3) Exit\n";
+		cout << "3) Misere Tic-Tac-Toe\n";
+		cout << "4) Exit\n";
 		cout << "\nEnter the Game Number to play\n";
 
 		int choice;
@@ -73,6 +92,10 @@ int main() {
 			break;
 
 		case 3:
+			run_Misere();
+			break;
+
+		case 4:
 			cout << "Goodbye\nReturn to the Arena ASAP!!\n";
 			return 0;
 
