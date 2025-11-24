@@ -1,4 +1,4 @@
-#include "Misere_Board.h"
+2#include "Misere_Board.h"
 #include <iostream>
 using namespace std;
 

@@ -11,10 +11,11 @@ include_directories(${CMAKE_SOURCE_DIR}/Framework)
 # Add game modules
 add_subdirectory(XO)
 add_subdirectory(Numerical9)
-add_subdirectory(Misere) 
+add_subdirectory(Misere)
+add_subdirectory(FiveByFive)
 
 # MAIN MENU executable
 add_executable(BoardGames Main.cpp)
 
-# Link the libraries from XO + Numerical9
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere)
+# Link the libraries from all games
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere FiveByFive)
