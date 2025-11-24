@@ -1,8 +1,9 @@
 #include "SUS_Board.h"
+#include "SUS_Move.h"
 #include <iostream>
 
 SUS_Board::SUS_Board() {
-    board.assign(ROWS, std::vector<char>(COLS, ' '));
+    board = std::vector<std::vector<char>>(ROWS, std::vector<char>(COLS, '-'));
     scores[0] = scores[1] = 0;
 }
 
@@ -14,43 +15,81 @@ bool SUS_Board::in_bounds(int r, int c) const {
     return r >= 0 && r < ROWS && c >= 0 && c < COLS;
 }
 
-int SUS_Board::count_new_sus_sequences(int r, int c) const {
-    int found = 0;
-    const int dirs[4][2] = { {1,0}, {0,1}, {1,1}, {1,-1} };
-    for (int i = 0; i < 4; ++i) {
-        int dx = dirs[i][0], dy = dirs[i][1];
-        if (in_bounds(r - dx, c - dy) && in_bounds(r + dx, c + dy))
-            if (board[r - dx][c - dy] == 'S' && board[r][c] == 'U' && board[r + dx][c + dy] == 'S') ++found;
-        if (in_bounds(r + dx, c + dy) && in_bounds(r + 2 * dx, c + 2 * dy))
-            if (board[r][c] == 'S' && board[r + dx][c + dy] == 'U' && board[r + 2 * dx][c + 2 * dy] == 'S') ++found;
-        if (in_bounds(r - 2 * dx, c - 2 * dy) && in_bounds(r - dx, c - dy))
-            if (board[r - 2 * dx][c - 2 * dy] == 'S' && board[r - dx][c - dy] == 'U' && board[r][c] == 'S') ++found;
-    }
-    return found;
-}
-
 bool SUS_Board::update_board(Move<char>* m) {
-    SUS_Move* sm = dynamic_cast<SUS_Move*>(m);
-    if (!sm) return false;
+    SUS_Move* move = dynamic_cast<SUS_Move*>(m);
+    if (!move) return false;
 
-    int r = m->x;
-    int c = m->y;
-    char letter = m->symbol;
+    int r = move->get_row();
+    int c = move->get_col();
+    char sym = move->get_symbol();
 
     if (!in_bounds(r, c)) return false;
-    if (board[r][c] != ' ') return false;
-    if (letter != 'S' && letter != 'U') return false;
+    if (board[r][c] != '-') return false;
 
-    board[r][c] = letter;
-    int gained = count_new_sus_sequences(r, c);
+    board[r][c] = sym;
 
-    int pIdx = sm->playerIndex;
-    if (pIdx >= 0 && pIdx <= 1) scores[pIdx] += gained;
+    // Update score for the player who played
+    int currentPlayer = sym == 'X' ? 0 : 1;
+    scores[currentPlayer] += count_new_sus_sequences(r, c);
 
     return true;
 }
 
+int SUS_Board::count_new_sus_sequences(int r, int c) const {
+    char sym = board[r][c];
+    int count = 0;
+
+    // Horizontal SUS (left-middle-right)
+    if (c - 1 >= 0 && c + 1 < COLS)
+        if (board[r][c - 1] == sym && board[r][c + 1] == sym)
+            count++;
+
+    // Vertical SUS
+    if (r - 1 >= 0 && r + 1 < ROWS)
+        if (board[r - 1][c] == sym && board[r + 1][c] == sym)
+            count++;
+
+    // Diagonal 1
+    if (r - 1 >= 0 && c - 1 >= 0 && r + 1 < ROWS && c + 1 < COLS)
+        if (board[r - 1][c - 1] == sym && board[r + 1][c + 1] == sym)
+            count++;
+
+    // Diagonal 2
+    if (r - 1 >= 0 && c + 1 < COLS && r + 1 < ROWS && c - 1 >= 0)
+        if (board[r - 1][c + 1] == sym && board[r + 1][c - 1] == sym)
+            count++;
+
+    return count;
+}
+
 bool SUS_Board::board_full() const {
-    for (int r = 0; r < ROWS; ++r)
-        for (int c = 0; c < COLS; ++c)
-            if (board[r][c] == ' ') ret
+    for (auto& row : board)
+        for (auto cell : row)
+            if (cell == '-') return false;
+    return true;
+}
+
+bool SUS_Board::game_is_over(Player<char>* p) {
+    return board_full();
+}
+
+bool SUS_Board::is_win(Player<char>* p) {
+    int index = p->get_symbol() == 'X' ? 0 : 1;
+    return scores[index] > scores[1 - index];
+}
+
+bool SUS_Board::is_draw(Player<char>* p) {
+    return scores[0] == scores[1] && board_full();
+}
+
+int SUS_Board::get_score(int playerIndex) const {
+    return scores[playerIndex];
+}
+
+void SUS_Board::reset_board() {
+    for (auto& row : board)
+        for (auto& cell : row)
+            cell = '-';
+
+    scores[0] = scores[1] = 0;
+}
