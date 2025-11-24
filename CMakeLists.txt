@@ -1,16 +1,17 @@
-cmake_minimum_required(VERSION 3.30)
-project(ASS_3)
+cmake_minimum_required(VERSION 3.10)
 
-set(CMAKE_CXX_STANDARD 20)
+project(BoardGamesProject)
 
-add_subdirectory(SUS_game)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(ASS_3 
-    Main.cpp
-    XO_game/XO_Classes.cpp
-    Numerical_game9/Numerical_Board.cpp
-    Numerical_game9/Numerical_UI.cpp
-    Numerical_game9/Numerical_PlayManagement.cpp
-)
+include_directories(${CMAKE_SOURCE_DIR}/Framework)
 
-target_link_libraries(ASS_3 PRIVATE SUS_lib)
+add_subdirectory(XO)
+add_subdirectory(Numerical9)
+add_subdirectory(Misere)
+add_subdirectory(SUS)
+
+add_executable(BoardGames Main.cpp)
+
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere SUS)
