@@ -1,0 +1,12 @@
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/CMakeFiles/BoardGames.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO/CMakeFiles/XO.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO/CMakeFiles/edit_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO/CMakeFiles/rebuild_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/CMakeFiles/Numerical9.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/CMakeFiles/edit_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/CMakeFiles/rebuild_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO4x4/CMakeFiles/XO4x4.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO4x4/CMakeFiles/edit_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO4x4/CMakeFiles/rebuild_cache.dir

@@ -8,7 +8,10 @@ using namespace std;
 
 class NumericBoard : public Board<int> {
 private:
-    char blank_symbol = '.';
+    bool x_out_of_moves = false;
+    bool o_out_of_moves = false;
+    int even_used = 0, odd_used = 0;
+    int blank_symbol = 0;
     bool usedNum[10];
     bool line_is_win(int a, int b, int c) const;
 

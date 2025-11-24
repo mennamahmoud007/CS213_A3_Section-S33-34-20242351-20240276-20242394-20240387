@@ -11,7 +11,7 @@ include_directories(${CMAKE_SOURCE_DIR}/Framework)
 # Add game modules
 add_subdirectory(XO)
 add_subdirectory(Numerical9)
-add_subdirectory(XO4x4)
+add_subdirectory(XO4x4) 
 
 # MAIN MENU executable
 add_executable(BoardGames Main.cpp)

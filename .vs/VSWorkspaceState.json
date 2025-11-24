@@ -1,0 +1,17 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\Framework",
+    "\\Numerical9",
+    "\\XO",
+    "\\XO4x4"
+  ],
+  "SelectedNode": "\\Main.cpp",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "XO",
+					"jsonFile" : "directory-XO-Debug-ae9250b5f79c9d57892f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "XO",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Numerical9",
+					"jsonFile" : "directory-Numerical9-Debug-8521259b86fde19b1955.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Numerical9",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "XO4x4",
+					"jsonFile" : "directory-XO4x4-Debug-0564b729610bfd9350dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "XO4x4",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "BoardGamesProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BoardGames::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BoardGames-Debug-346598ef9465b94646ef.json",
+					"name" : "BoardGames",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Numerical9::@23716173899ac185d818",
+					"jsonFile" : "target-Numerical9-Debug-0f53a0d21a9d14673637.json",
+					"name" : "Numerical9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "XO::@92003f51b55971609eba",
+					"jsonFile" : "target-XO-Debug-fa21acd491cc5c4f6e8b.json",
+					"name" : "XO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "XO4x4::@acd780fe3cb851aa917b",
+					"jsonFile" : "target-XO4x4-Debug-6bc46f2a5d40fd3d6af6.json",
+					"name" : "XO4x4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug",
+		"source" : "C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

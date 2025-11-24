@@ -66,12 +66,12 @@ int main() {
 	while (true) {
 		cout << "\n=============================\n";
 		cout << "\n       GAMES ARENA\n";
-		cout << "\n=============================\n";
+		cout << "\n=============================\n\n";
 		cout << "1) XO Game\n";
 		cout << "2) Numerical Tic-Tac-Toe\n";
 		cout << "3) 4x4 XO Tic-Tac-Toe\n";
 		cout << "4) Exit\n";
-		cout << "\nEnter the Game Number to play\n";
+		cout << "\nEnter the Game Number to play: ";
 
 		int choice;
 		cin >> choice;
@@ -90,7 +90,7 @@ int main() {
 			run_XO4x4();
 			break;
 		case 4:
-			cout << "Goodbye\nReturn to the Arena ASAP!!\n";
+			cout << "\nGoodbye\nReturn to the Arena ASAP!!\n";
 			return 0;
 
 		default:
