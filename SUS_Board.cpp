@@ -2,8 +2,9 @@
 #include "SUS_Move.h"
 #include <iostream>
 
-SUS_Board::SUS_Board() {
-    board = std::vector<std::vector<char>>(ROWS, std::vector<char>(COLS, '-'));
+SUS_Board::SUS_Board()
+    : board(ROWS, std::vector<char>(COLS, '-'))
+{
     scores[0] = scores[1] = 0;
 }
 
@@ -29,7 +30,7 @@ bool SUS_Board::update_board(Move<char>* m) {
     board[r][c] = sym;
 
     // Update score for the player who played
-    int currentPlayer = sym == 'X' ? 0 : 1;
+    int currentPlayer = move->playerIndex;
     scores[currentPlayer] += count_new_sus_sequences(r, c);
 
     return true;
@@ -39,12 +40,12 @@ int SUS_Board::count_new_sus_sequences(int r, int c) const {
     char sym = board[r][c];
     int count = 0;
 
-    // Horizontal SUS (left-middle-right)
+    // Horizontal
     if (c - 1 >= 0 && c + 1 < COLS)
         if (board[r][c - 1] == sym && board[r][c + 1] == sym)
             count++;
 
-    // Vertical SUS
+    // Vertical
     if (r - 1 >= 0 && r + 1 < ROWS)
         if (board[r - 1][c] == sym && board[r + 1][c] == sym)
             count++;
@@ -74,7 +75,7 @@ bool SUS_Board::game_is_over(Player<char>* p) {
 }
 
 bool SUS_Board::is_win(Player<char>* p) {
-    int index = p->get_symbol() == 'X' ? 0 : 1;
+    int index = p->get_id(); // Player index
     return scores[index] > scores[1 - index];
 }
 

@@ -1,17 +1,15 @@
-cmake_minimum_required(VERSION 3.10)
+# CMakeLists.txt for SUS
 
-project(BoardGamesProject)
+# Declare a library target named SUS
+add_library(SUS
+    SUS_Board.cpp
+    SUS_UI.cpp
+    SUS_Board.h
+    SUS_UI.h
+    SUS_Move.h
+)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# Include current directory for headers
+target_include_directories(SUS PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-include_directories(${CMAKE_SOURCE_DIR}/Framework)
-
-add_subdirectory(XO)
-add_subdirectory(Numerical9)
-add_subdirectory(Misere)
-add_subdirectory(SUS)
-
-add_executable(BoardGames Main.cpp)
-
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere SUS)
+target_compile_features(SUS PUBLIC cxx_std_17)
