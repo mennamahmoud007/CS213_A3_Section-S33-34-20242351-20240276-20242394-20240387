@@ -6,8 +6,6 @@
 #include "Numerical9/Numerical_UI.h"
 #include "Misere/Misere_Board.h"
 #include "Misere/Misere_UI.h"
-#include "SUS/SUS_Board.h"
-#include "SUS/SUS_UI.h"
 
 using namespace std;
 
@@ -64,20 +62,6 @@ void run_Numerical9() {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------ SUS Game --------------------------------------------------------------*/
-void run_SUS() {
-	cout << "\nWelcome to SUS Game...\n";
-	UI<char>* game_ui = new SUS_UI();
-	Board<char>* game_board = new SUS_Board();
-	Player<char>** players = game_ui->setup_players();
-	GameManager<char> sus_game(game_board, players, game_ui);
-	sus_game.run();
-	delete game_board;
-	for (int i = 0; i < 2; ++i) {
-		delete players[i];
-	}
-	delete[] players;
-	delete game_ui;
-}
 
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 
@@ -90,8 +74,7 @@ void run_SUS() {
 			cout << "1) XO Game\n";
 			cout << "2) Numerical Tic-Tac-Toe\n";
 			cout << "3) Misere Tic-Tac-Toe\n";
-			cout << "4) SUS Game\n";
-			cout << "5) Exit\n";
+			cout << "4) Exit\n";
 			cout << "\nEnter the Game Number to play\n";
 			int choice;
 			cin >> choice;
@@ -99,8 +82,7 @@ void run_SUS() {
 			case 1: run_XO(); break;
 			case 2: run_Numerical9(); break;
 			case 3: run_Misere(); break;
-			case 4: run_SUS(); break;
-			case 5:
+			case 4:
 				cout << "Goodbye\nReturn to the Arena ASAP!!\n";
 				return 0;
 			default:
