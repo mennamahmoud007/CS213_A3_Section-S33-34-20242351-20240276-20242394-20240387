@@ -14,6 +14,7 @@ public:
 
     bool update_board(Move<char>* move, Player<char>* player);
 
+    bool update_board(Move<char>* move) override;
     bool is_win(Player<char>* player) override { return false; }
     bool is_lose(Player<char>* player) override { return false; }
     bool is_draw(Player<char>* player) override;
@@ -22,3 +23,4 @@ public:
     int count_sus_sequences();
     int get_score(Player<char>* player);
 };
+

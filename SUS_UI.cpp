@@ -1,7 +1,6 @@
 #include "SUS_UI.h"
 #include <cstdlib>
-#include <iostream>
-using namespace std;
+#include <limits>
 
 Player<char>* SUS_UI::create_player(string& name, char symbol, PlayerType type) {
     cout << "Creating " << (type == PlayerType::HUMAN ? "Human" : "Computer")
@@ -14,6 +13,7 @@ Move<char>* SUS_UI::get_move(Player<char>* player) {
 
     cout << player->get_name() << " (" << player->get_symbol() << ") enter your move (row col 0-2): ";
     cin >> x >> y;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
     return new Move<char>(x, y, player->get_symbol());
 }

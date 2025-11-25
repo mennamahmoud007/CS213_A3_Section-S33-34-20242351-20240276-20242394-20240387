@@ -15,12 +15,25 @@ bool SUS_Board::update_board(Move<char>* move, Player<char>* player) {
     if (board[x][y] != '-') return false;
 
     board[x][y] = sym;
+    n_moves++;
 
-    // تحديث النقاط بعد كل حركة
     int sequences = count_sus_sequences();
     if (player->get_symbol() == 'S') p1_score = sequences;
     else p2_score = sequences;
 
+    return true;
+}
+
+bool SUS_Board::update_board(Move<char>* move) {
+    // مجرد تطبيق الحركة بدون حساب نقاط
+    int x = move->get_x();
+    int y = move->get_y();
+    char sym = toupper(move->get_symbol());
+
+    if (x < 0 || x >= rows || y < 0 || y >= columns) return false;
+    if (board[x][y] != '-') return false;
+
+    board[x][y] = sym;
     n_moves++;
     return true;
 }
