@@ -19,43 +19,10 @@ NumericBoard::NumericBoard() : Board(3, 3) {
     n_moves = 0;
 }
 
-bool NumericBoard::update_board(Move<int>* move) {
-    if(!move) return false;
-
-    int x = move->get_x();
-    int y = move->get_y();
-    int val = move->get_symbol();
-
-    if(x < 0 || x >= 3 || y < 0 || y >= 3){
-        cout << "🚫 Invalid cell: row and column must be between 0-2.\nTry again." << endl;
-        return false;
-    }
-
-    if(board[x][y] != '.'){
-        cout << "‼️ This Cell is already taken.\nTry again." << endl;
-        return false;
-    }
-
-    if(val > 9 || val < 1){
-        cout << "‼️ Numbers must be between 1-9.\nTry again." << endl;
-        return false;
-    }
-
-    if(usedNum[val]){
-        cout << "❌ Number " << val << " is already taken.\nTry again." << endl;
-        return false;
-    }
-
-    board[x][y] = val;
-    usedNum[val] = true;
-    n_moves++;
-    return true;
-}
-
 bool NumericBoard::line_is_win(int a, int b, int c) const {
-    if (a == '.' || b == '.' || c == '.')
+    if (a == 0 || b == 0 || c == 0)
         return false;
-    if(a + b + c == 15) return true;
+    if (a + b + c == 15) return true;
     else return false;
 }
 
@@ -83,9 +50,15 @@ bool NumericBoard::is_lose(Player<int>*) {
 }
 
 bool NumericBoard::is_draw(Player<int>*) {
-    if (n_moves < 9) return false;
-    if (is_win(nullptr)) return false;
-    return true;
+    if ((x_out_of_moves || o_out_of_moves) && !is_win(nullptr)) {
+        return true;
+    }
+
+    if (n_moves == 9 && !is_win(nullptr)) {
+        return true;
+    }
+
+    return false;
 }
 
 bool NumericBoard::game_is_over(Player<int>* player) {
@@ -104,7 +77,7 @@ vector<pair<int,int>> NumericBoard::available_cells() const {
     vector<pair<int,int>> res;
     for (int r = 0; r < 3; r++)
         for (int c = 0; c < 3; c++)
-            if (board[r][c] == '.')
+            if (board[r][c] == 0)
                 res.emplace_back(r, c);
     return res;
 }
@@ -142,3 +115,52 @@ vector<pair<int,int>> NumericBoard::get_winning_positions() const {
     }
     return positions;
 }
+
+bool NumericBoard::update_board(Move<int>* move) {
+    if (!move) return false;
+    
+
+    int x = move->get_x();
+    int y = move->get_y();
+    int val = move->get_symbol();
+
+    if (x < 0 || x >= 3 || y < 0 || y >= 3) {
+        cout << "Invalid cell: row and column must be between 0-2.\nTry again." << endl;
+        return false;
+    }
+
+    if (board[x][y] != 0) {
+        cout << "This Cell is already taken.\nTry again." << endl;
+        return false;
+    }
+
+    if (val > 9 || val < 1) {
+        cout << "Numbers must be between 1-9.\nTry again." << endl;
+        return false;
+    }
+
+    if (usedNum[val]) {
+        cout << "Number " << val << " is already taken.\nTry again." << endl;
+        return false;
+    }
+
+    board[x][y] = val;
+    usedNum[val] = true;
+    n_moves++;
+
+    if (val % 2 == 0) {       // even
+        even_used++;
+        if (even_used == 4) {     // 2,4,6,8
+            cout << "Player X is out of moves!" << endl;
+            x_out_of_moves = true;
+        }
+    }
+    else {
+        odd_used++;     // odd
+        if (odd_used == 5) {      // 1,3,5,7,9
+            cout << "Player O is out of moves!" << endl;
+            o_out_of_moves = true;
+        }
+    }
+     return true;
+    }
