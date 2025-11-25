@@ -12,6 +12,10 @@
 #include "XO4x4/XO4x4_UI.h"
 #include "FiveByFive/FiveByFive_Board.h"
 #include "FiveByFive/FiveByFive_UI.h"
+#include "Infinity/Infinity_Board.h"
+#include "Infinity/Infinity_UI.h"
+#include "SUS/SUS_Board.h"
+#include "SUS/SUS_UI.h"
 
 using namespace std;
 
@@ -32,14 +36,24 @@ void run_XO() {
 
 
 /*------------------------------------------------------ SUS Game --------------------------------------------------------------*/
-
+void run_SUS() {
+	UI<char>* game_ui = new SUS_UI();
+	Board<char>* game_board = new SUS_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> sus_game(game_board, players, game_ui);
+	sus_game.run();
+	delete game_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
+	delete game_ui;
+}
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*------------------------------------------------------ FiveByFive Game --------------------------------------------------------------*/
 void run_FiveByFive() {
-	cout << "\nWelcome to 5x5 Tic-Tac-Toe Game...\n";
-
 	UI<char>* game_ui = new FiveByFive_UI();
 	Board<char>* game_board = new FiveByFive_Board();
 	Player<char>** players = game_ui->setup_players();
@@ -78,8 +92,6 @@ void run_FiveByFive() {
 
 /*----------------------------------------------- Misère Tic-Tac-Toe Game ---------------------------------------------*/
 void run_Misere() {
-	cout << "\nWelcome to Misère Tic-Tac-Toe Game...\n";
-
 	UI<char>* game_ui = new Misere_UI();
 	Board<char>* game_board = new Misere_Board();
 	Player<char>** players = game_ui->setup_players();
@@ -144,6 +156,21 @@ void run_Obstacles() {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
+/*------------------------------------------------------ Infinity Game --------------------------------------------------------------*/
+void run_Infinity() {
+	UI<char>* game_ui = new Infinity_UI();
+	Board<char>* game_board = new Infinity_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> infinity_game(game_board, players, game_ui);
+	infinity_game.run();
+
+	delete game_board;
+	for (int i = 0; i < 2; ++i) delete players[i];
+	delete[] players;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 
 	int main() {
@@ -158,7 +185,9 @@ void run_Obstacles() {
 			cout << "4) 4x4 XO Tic-Tac-Toe\n";
 			cout << "5) Numerical Tic-Tac-Toe\n";
 			cout << "6) Obstacles Tic-Tac-Toe\n";
-			cout << "7) Exit\n";
+			cout << "7) Infinity Tic-Tac-Toe\n";
+			cout << "8) SUS Tic-Tac-Toe\n";
+			cout << "9) Exit\n";
 			cout << "\nEnter the Game Number to play: ";
 			int choice;
 			cin >> choice;
@@ -169,7 +198,9 @@ void run_Obstacles() {
 			case 4: run_XO4x4(); break;
 			case 5: run_Numerical9(); break;
 			case 6: run_Obstacles(); break;
-			case 7:
+			case 7: run_Infinity(); break;
+			case 8: run_SUS(); break;
+			case 9:
 				cout << "Goodbye\nReturn to the Arena ASAP!!\n";
 				return 0;
 			default:

@@ -14,12 +14,14 @@ add_subdirectory(Numerical9)
 add_subdirectory(Misere)
 add_subdirectory(XO4x4) 
 add_subdirectory(Obstacles)
-add_subdirectory(FiveByFive)
+add_subdirectory(FiveByFive) 
+add_subdirectory(Infinity)
+add_subdirectory(SUS)
 
 
-# MAIN MENU executable
+# MAIN MENU executable 
 add_executable(BoardGames Main.cpp)
 
 # Link the libraries from games
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere XO4x4 Obstacles FiveByFive)
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere XO4x4 Obstacles FiveByFive Infinity SUS)
 

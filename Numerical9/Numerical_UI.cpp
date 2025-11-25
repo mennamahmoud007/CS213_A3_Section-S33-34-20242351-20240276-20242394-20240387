@@ -1,7 +1,7 @@
 #include "Numerical_UI.h"
 #include <iostream>
 #include <iomanip>
-#include "Numerical_UI.h"
+
 
 
 Player<int>* NumericalUI::create_player(string& name, int symbol, PlayerType type) {
