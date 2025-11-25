@@ -1,77 +1,57 @@
 ﻿#include "SUS_Board.h"
-#include <iostream>
-using namespace std;
 
 SUS_Board::SUS_Board() : Board<char>(3, 3) {
     for (auto& row : board)
         for (auto& cell : row)
-            cell = '-';   // blank cell
+            cell = '-';
 }
 
-bool SUS_Board::update_board(Move<char>* move) {
+bool SUS_Board::update_board(Move<char>* move, Player<char>* player) {
     int x = move->get_x();
     int y = move->get_y();
-    char mark = move->get_symbol();
+    char sym = toupper(move->get_symbol());
 
-    if (x < 0 || x >= rows || y < 0 || y >= columns)
-        return false;
+    if (x < 0 || x >= rows || y < 0 || y >= columns) return false;
+    if (board[x][y] != '-') return false;
 
-    if (board[x][y] != '-')   // cell must be empty
-        return false;
+    board[x][y] = sym;
 
-    board[x][y] = toupper(mark);
+    // تحديث النقاط بعد كل حركة
+    int sequences = count_sus_sequences();
+    if (player->get_symbol() == 'S') p1_score = sequences;
+    else p2_score = sequences;
+
     n_moves++;
-
     return true;
 }
 
-bool SUS_Board::is_win(Player<char>* player) {
-    char sym = player->get_symbol();
-
-    auto eq = [&](char a, char b, char c) {
-        return a == sym && b == sym && c == sym;
-        };
-
-    // Rows
-    for (int i = 0; i < 3; ++i)
-        if (eq(board[i][0], board[i][1], board[i][2])) return true;
-
-    // Columns
-    for (int i = 0; i < 3; ++i)
-        if (eq(board[0][i], board[1][i], board[2][i])) return true;
-
-    // Diagonals
-    if (eq(board[0][0], board[1][1], board[2][2])) return true;
-    if (eq(board[0][2], board[1][1], board[2][0])) return true;
-
-    return false;
-}
-
-bool SUS_Board::is_lose(Player<char>* player) {
-    if (!player) return false;
-    Board<char>* b = player->get_board_ptr();
-    if (!b) return false;
-
-    
-    char other_sym = '\0';
-    for (auto& row : b->get_board_matrix())
-        for (auto& cell : row)
-            if (cell != '-' && toupper(cell) != player->get_symbol())
-                other_sym = toupper(cell);
-
-    if (other_sym == '\0') return false; 
-
-    Player<char> temp_other("Other", other_sym, PlayerType::HUMAN);
-    temp_other.set_board_ptr(b);
-
-    return is_win(&temp_other);
-}
-
 bool SUS_Board::is_draw(Player<char>* player) {
-    return (n_moves == 9 && !is_win(player));
+    return n_moves == 9;
 }
 
 bool SUS_Board::game_is_over(Player<char>* player) {
-    return is_win(player) || is_draw(player);
+    return n_moves == 9;
 }
 
+int SUS_Board::count_sus_sequences() {
+    int count = 0;
+
+    // الصفوف
+    for (int i = 0; i < 3; i++)
+        if (board[i][0] == 'S' && board[i][1] == 'U' && board[i][2] == 'S') count++;
+
+    // الأعمدة
+    for (int j = 0; j < 3; j++)
+        if (board[0][j] == 'S' && board[1][j] == 'U' && board[2][j] == 'S') count++;
+
+    // الأقطار
+    if (board[0][0] == 'S' && board[1][1] == 'U' && board[2][2] == 'S') count++;
+    if (board[0][2] == 'S' && board[1][1] == 'U' && board[2][0] == 'S') count++;
+
+    return count;
+}
+
+int SUS_Board::get_score(Player<char>* player) {
+    if (player->get_symbol() == 'S') return p1_score;
+    return p2_score;
+}
