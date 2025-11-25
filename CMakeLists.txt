@@ -12,9 +12,13 @@ include_directories(${CMAKE_SOURCE_DIR}/Framework)
 add_subdirectory(XO)
 add_subdirectory(Numerical9)
 add_subdirectory(Misere) 
+add_subdirectory(FiveByFive) 
+add_subdirectory(Infinity)
+
+
 
 # MAIN MENU executable
-add_executable(BoardGames Main.cpp)
+add_executable(BoardGames Main.cpp "FiveByFive/FiveByFive_UI.cpp" "FiveByFive/FiveByFive_Board.h" "FiveByFive/FiveByFive_Board.cpp" "Infinity/Infinity_Board.cpp" "Infinity/Infinity_UI.h" "Infinity/Infinity_UI.cpp")
 
 # Link the libraries from XO + Numerical9
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere)
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere FiveByFive Infinity)
