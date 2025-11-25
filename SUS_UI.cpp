@@ -1,6 +1,8 @@
 #include "SUS_UI.h"
 #include <cstdlib>
+#include <iostream>
 #include <limits>
+using namespace std;
 
 Player<char>* SUS_UI::create_player(string& name, char symbol, PlayerType type) {
     cout << "Creating " << (type == PlayerType::HUMAN ? "Human" : "Computer")

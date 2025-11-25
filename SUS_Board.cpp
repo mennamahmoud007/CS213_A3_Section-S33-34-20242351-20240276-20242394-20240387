@@ -1,11 +1,13 @@
 ﻿#include "SUS_Board.h"
+#include <cctype>
 
-SUS_Board::SUS_Board() : Board<char>(3, 3) {
+SUS_Board::SUS_Board() : Board<char>(3, 3), p1_score(0), p2_score(0) {
     for (auto& row : board)
         for (auto& cell : row)
             cell = '-';
 }
 
+// تحديث اللوحة مع اللاعب الحالي وحساب النقاط
 bool SUS_Board::update_board(Move<char>* move, Player<char>* player) {
     int x = move->get_x();
     int y = move->get_y();
@@ -17,7 +19,7 @@ bool SUS_Board::update_board(Move<char>* move, Player<char>* player) {
     board[x][y] = sym;
     n_moves++;
 
-    // تحديث النقاط
+    
     int sequences = count_sus_sequences();
     if (player->get_symbol() == 'S') p1_score = sequences;
     else p2_score = sequences;
@@ -37,7 +39,6 @@ bool SUS_Board::update_board(Move<char>* move) {
     n_moves++;
     return true;
 }
-
 bool SUS_Board::is_draw(Player<char>* player) {
     return n_moves == 9;
 }
@@ -46,9 +47,9 @@ bool SUS_Board::game_is_over(Player<char>* player) {
     return n_moves == 9;
 }
 
+
 int SUS_Board::count_sus_sequences() {
     int count = 0;
-
     // الصفوف
     for (int i = 0; i < 3; i++)
         if (board[i][0] == 'S' && board[i][1] == 'U' && board[i][2] == 'S') count++;
@@ -68,4 +69,3 @@ int SUS_Board::get_score(Player<char>* player) {
     if (player->get_symbol() == 'S') return p1_score;
     return p2_score;
 }
-
