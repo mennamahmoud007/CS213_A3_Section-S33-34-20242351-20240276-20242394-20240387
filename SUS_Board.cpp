@@ -17,6 +17,7 @@ bool SUS_Board::update_board(Move<char>* move, Player<char>* player) {
     board[x][y] = sym;
     n_moves++;
 
+    // تحديث النقاط
     int sequences = count_sus_sequences();
     if (player->get_symbol() == 'S') p1_score = sequences;
     else p2_score = sequences;
@@ -25,7 +26,6 @@ bool SUS_Board::update_board(Move<char>* move, Player<char>* player) {
 }
 
 bool SUS_Board::update_board(Move<char>* move) {
-    // مجرد تطبيق الحركة بدون حساب نقاط
     int x = move->get_x();
     int y = move->get_y();
     char sym = toupper(move->get_symbol());
@@ -68,3 +68,4 @@ int SUS_Board::get_score(Player<char>* player) {
     if (player->get_symbol() == 'S') return p1_score;
     return p2_score;
 }
+
