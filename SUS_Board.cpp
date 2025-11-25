@@ -1,96 +1,53 @@
-#include "SUS_Board.h"
-#include "SUS_Move.h"
+﻿#include "SUS_Board.h"
 #include <iostream>
+using namespace std;
 
-SUS_Board::SUS_Board()
-    : board(ROWS, std::vector<char>(COLS, '-'))
-{
-    scores[0] = scores[1] = 0;
-}
-
-std::vector<std::vector<char>> SUS_Board::get_board_matrix() {
-    return board;
-}
-
-bool SUS_Board::in_bounds(int r, int c) const {
-    return r >= 0 && r < ROWS && c >= 0 && c < COLS;
-}
-
-bool SUS_Board::update_board(Move<char>* m) {
-    SUS_Move* move = dynamic_cast<SUS_Move*>(m);
-    if (!move) return false;
-
-    int r = move->get_row();
-    int c = move->get_col();
-    char sym = move->get_symbol();
-
-    if (!in_bounds(r, c)) return false;
-    if (board[r][c] != '-') return false;
-
-    board[r][c] = sym;
-
-    // Update score for the player who played
-    int currentPlayer = move->playerIndex;
-    scores[currentPlayer] += count_new_sus_sequences(r, c);
-
-    return true;
-}
-
-int SUS_Board::count_new_sus_sequences(int r, int c) const {
-    char sym = board[r][c];
-    int count = 0;
-
-    // Horizontal
-    if (c - 1 >= 0 && c + 1 < COLS)
-        if (board[r][c - 1] == sym && board[r][c + 1] == sym)
-            count++;
-
-    // Vertical
-    if (r - 1 >= 0 && r + 1 < ROWS)
-        if (board[r - 1][c] == sym && board[r + 1][c] == sym)
-            count++;
-
-    // Diagonal 1
-    if (r - 1 >= 0 && c - 1 >= 0 && r + 1 < ROWS && c + 1 < COLS)
-        if (board[r - 1][c - 1] == sym && board[r + 1][c + 1] == sym)
-            count++;
-
-    // Diagonal 2
-    if (r - 1 >= 0 && c + 1 < COLS && r + 1 < ROWS && c - 1 >= 0)
-        if (board[r - 1][c + 1] == sym && board[r + 1][c - 1] == sym)
-            count++;
-
-    return count;
-}
-
-bool SUS_Board::board_full() const {
-    for (auto& row : board)
-        for (auto cell : row)
-            if (cell == '-') return false;
-    return true;
-}
-
-bool SUS_Board::game_is_over(Player<char>* p) {
-    return board_full();
-}
-
-bool SUS_Board::is_win(Player<char>* p) {
-    int index = p->get_id(); // Player index
-    return scores[index] > scores[1 - index];
-}
-
-bool SUS_Board::is_draw(Player<char>* p) {
-    return scores[0] == scores[1] && board_full();
-}
-
-int SUS_Board::get_score(int playerIndex) const {
-    return scores[playerIndex];
-}
-
-void SUS_Board::reset_board() {
+SUS_Board::SUS_Board() : Board(3, 3) {
     for (auto& row : board)
         for (auto& cell : row)
-            cell = '-';
-
-    scores[0] = scores[1] = 0;
+            cell = '-';   // blank cell
 }
+
+bool SUS_Board::update_board(Move<char>* move) {
+    int x = move->get_x();
+    int y = move->get_y();
+    char mark = move->get_symbol();
+
+    if (x < 0 || x >= rows || y < 0 || y >= columns)
+        return false;
+
+    if (board[x][y] != '-')   // cell must be empty
+        return false;
+
+    board[x][y] = toupper(mark);
+    n_moves++;
+
+    return true;
+}
+
+bool SUS_Board::is_win(Player<char>* player) {
+    char sym = player->get_symbol();
+
+    auto eq = [&](char a, char b, char c) {
+        return a == sym && b == sym && c == sym;
+        };
+
+    for (int i = 0; i < 3; ++i) {
+        if (eq(board[i][0], board[i][1], board[i][2])) return true;
+        if (eq(board[0][i], board[1][i], board[2][i])) return true;
+    }
+
+    if (eq(board[0][0], board[1][1], board[2][2])) return true;
+    if (eq(board[0][2], board[1][1], board[2][0])) return true;
+
+    return false;
+}
+
+bool SUS_Board::is_draw(Player<char>* player) {
+    return (n_moves == 9 && !is_win(player));
+}
+
+bool SUS_Board::game_is_over(Player<char>* player) {
+    return is_win(player) || is_draw(player);
+}
+
