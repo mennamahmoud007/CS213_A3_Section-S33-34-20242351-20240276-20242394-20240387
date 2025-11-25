@@ -6,6 +6,9 @@
 #include "Numerical9/Numerical_UI.h"
 #include "XO4x4/XO4x4_Board.h"
 #include "XO4x4/XO4x4_UI.h"
+#include "Obstacles/obstacles_Board.h"
+#include "Obstacles/obstacles_UI.h"
+
 
 using namespace std;
 
@@ -57,6 +60,25 @@ void run_XO4x4() {
 		delete players[i];
 	delete[] players;
 }
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------- Obstacles Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Obstacles() {
+	UI<char>* game_ui = new ObstaclesUI();
+	Board<char>* board = new ObstaclesBoard();
+	Player<char>** players = game_ui->setup_players();
+
+	GameManager<char> game(board, players, game_ui);
+	game.run();
+
+	delete board;
+	for (int i = 0; i < 2; i++)
+		delete players[i];
+	delete[] players;
+}
+
+/*------------------------------------------------------ SUS Game --------------------------------------------------------------*/
 
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 int main() {
@@ -70,7 +92,8 @@ int main() {
 		cout << "1) XO Game\n";
 		cout << "2) Numerical Tic-Tac-Toe\n";
 		cout << "3) 4x4 XO Tic-Tac-Toe\n";
-		cout << "4) Exit\n";
+		cout << "4) Obstacles Tic-Tac-Toe\n";
+		cout << "5) Exit\n";
 		cout << "\nEnter the Game Number to play: ";
 
 		int choice;
@@ -89,7 +112,12 @@ int main() {
 		case 3:
 			run_XO4x4();
 			break;
+
 		case 4:
+			run_Obstacles();
+			break;
+
+		case 5:
 			cout << "\nGoodbye\nReturn to the Arena ASAP!!\n";
 			return 0;
 

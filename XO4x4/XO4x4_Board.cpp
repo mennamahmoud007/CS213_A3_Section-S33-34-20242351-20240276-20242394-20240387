@@ -1,7 +1,4 @@
 #include "XO4x4_Board.h"
-#include "XO4x4_Board.h"
-#include "XO4x4_Board.h"
-#include "XO4x4_Board.h"
 #include <iostream>
 #include <utility>
 
@@ -75,6 +72,11 @@ bool XO4x4_Board::update_board(Move<char>* move) {
 
 	
 	int nx, ny;
+
+	if (x < 0 || x >= 4 || y < 0 || y >= 4) {
+		cout << "Invalid cell: row and column must be between 0-3.\nTry again." << endl;
+		return false;
+	}
 
 	if (board[x][y] != sym) {
 		cout << "You must move your own token " << sym << endl;

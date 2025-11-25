@@ -8,10 +8,11 @@
   "ExpandedNodes": [
     "",
     "\\Framework",
-    "\\Numerical9",
+    "\\Obstacles",
+    "\\out",
     "\\XO",
     "\\XO4x4"
   ],
-  "SelectedNode": "\\Main.cpp",
+  "SelectedNode": "\\Obstacles\\obstacles_Board.cpp",
   "PreviewInSolutionExplorer": false
 }
