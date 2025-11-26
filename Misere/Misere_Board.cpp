@@ -51,7 +51,7 @@ bool Misere_Board::update_board(Move<char>* move) {
     return true;
 }
 
-bool Misere_Board::is_win(Player<char>* player) { 
+bool Misere_Board::is_win(Player<char>* player) {
     return false;
 }
 

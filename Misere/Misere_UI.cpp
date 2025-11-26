@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Misere_UI::Misere_UI() : UI<char>("Welcome to Misere Tic-Tac-Toe",3) {}
+Misere_UI::Misere_UI() : UI<char>("Welcome to Misere Tic-Tac-Toe", 3) {}
 
 Player<char>* Misere_UI::create_player(string& name, char symbol, PlayerType type) {
     cout << "Creating " << (type == PlayerType::HUMAN ? "human" : "computer")
