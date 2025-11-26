@@ -1,4 +1,4 @@
-# CMake configuration for the Infinity game
+# CMake configuration for the SUS game
 
 set(SUS_SRC
     SUS_Board.cpp

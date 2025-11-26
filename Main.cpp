@@ -42,6 +42,27 @@ void run_SUS() {
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> sus_game(game_board, players, game_ui);
 	sus_game.run();
+
+	SUS_Board* _board = dynamic_cast<SUS_Board*>(game_board);
+	if (_board) {
+		int s_score = _board->score_S;
+		int u_score = _board->score_U;
+
+		cout << "\n=== FINAL SCORE ===" << endl;
+		cout << "Player 1 (S) score: " << s_score << "\n";
+		cout << "Player 2 (U) score: " << u_score << "\n";
+
+		if (s_score > u_score) {
+			cout << "Winner: Player 1 (S)\n";
+		}
+		else if (u_score > s_score) {
+			cout << "Winner: Player 2 (U)\n";
+		}
+		else {
+			cout << "DRAW!\n";
+		}
+	}
+
 	delete game_board;
 	for (int i = 0; i < 2; ++i) {
 		delete players[i];

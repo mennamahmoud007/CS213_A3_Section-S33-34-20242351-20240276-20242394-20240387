@@ -5,11 +5,15 @@
 #include "SUS_Board.h"
 
 class SUS_UI : public UI<char> {
+private:
+    static int p;
 public:
     SUS_UI();
+
     Player<char>* create_player(string& name, char symbol, PlayerType type) override;
     Move<char>* get_move(Player<char>* player) override;
-    void print_game_result(SUS_Board& board);
+
+    //void print_game_result(SUS_Board& board);
 };
 
 #endif

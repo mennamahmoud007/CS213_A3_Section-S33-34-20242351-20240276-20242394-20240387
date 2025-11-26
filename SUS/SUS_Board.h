@@ -6,31 +6,21 @@ using namespace std;
 
 class SUS_Board : public Board<char> {
 private:
-	char blank_symbol = '.';
-	int count_SUS_sequences(int r, int c, char sym);
+    char blank_symbol = '.';
 
-public:
-	SUS_Board();
-	virtual ~SUS_Board();
+public: 
+    SUS_Board();
+    virtual ~SUS_Board();
 
-	bool update_board(Move<char>* move) override;
-	bool is_win(Player<char>* player) override;
-	bool is_lose(Player<char>* player) override { return false; }
-	bool is_draw(Player<char>* player) override;
-	bool game_is_over(Player<char>* player) override;
+    bool update_board(Move<char>* move) override;
+    bool is_win(Player<char>* player) override { return false; }
+    bool is_lose(Player<char>* player) override { return false; }
+    bool is_draw(Player<char>* player) override;
+    bool game_is_over(Player<char>* player) override;
+    int count_SUS_sequences(int r, int c);
 
-	int score_S = 0;
-	int score_U = 0;
+    int score_S = 0; 
+    int score_U = 0; 
 };
-
-
-
-
-
-
-
-
-
-
 
 #endif
