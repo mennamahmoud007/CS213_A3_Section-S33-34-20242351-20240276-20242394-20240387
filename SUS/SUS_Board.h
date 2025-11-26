@@ -1,4 +1,4 @@
-#ifndef SUS_BOARD_H
+﻿#ifndef SUS_BOARD_H
 #define SUS_BOARD_H
 
 #include "BoardGame_Classes.h"
@@ -7,8 +7,9 @@ using namespace std;
 class SUS_Board : public Board<char> {
 private:
     char blank_symbol = '.';
+    
 
-public: 
+public:
     SUS_Board();
     virtual ~SUS_Board();
 
@@ -18,9 +19,9 @@ public:
     bool is_draw(Player<char>* player) override;
     bool game_is_over(Player<char>* player) override;
     int count_SUS_sequences(int r, int c);
-
-    int score_S = 0; 
-    int score_U = 0; 
+    int score_S = 0;
+    int score_U = 0;
+    
 };
 
 #endif

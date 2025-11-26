@@ -16,7 +16,6 @@
 #include "Infinity/Infinity_UI.h"
 #include "SUS/SUS_Board.h"
 #include "SUS/SUS_UI.h"
-
 using namespace std;
 
 /*------------------------------------------------------ XO Game --------------------------------------------------------------*/
@@ -49,8 +48,8 @@ void run_SUS() {
 		int u_score = _board->score_U;
 
 		cout << "\n=== FINAL SCORE ===" << endl;
-		cout << "Player 1 (S) score: " << s_score << "\n";
-		cout << "Player 2 (U) score: " << u_score << "\n";
+		    cout << "Player 1 (S) score: " << s_score << "\n";
+		    cout << "Player 2 (U) score: " << u_score << "\n";
 
 		if (s_score > u_score) {
 			cout << "Winner: Player 1 (S)\n";
@@ -59,7 +58,7 @@ void run_SUS() {
 			cout << "Winner: Player 2 (U)\n";
 		}
 		else {
-			cout << "DRAW!\n";
+			cout << "It\'s a DRAW!\n";
 		}
 	}
 
@@ -177,7 +176,7 @@ void run_Obstacles() {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*------------------------------------------------------ Infinity Game --------------------------------------------------------------*/
+/*----------------------------------------------- Infinity Tic-Tac-Toe Game ---------------------------------------------*/
 void run_Infinity() {
 	UI<char>* game_ui = new Infinity_UI();
 	Board<char>* game_board = new Infinity_Board();
@@ -191,7 +190,6 @@ void run_Infinity() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
-
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 
 	int main() {
@@ -204,10 +202,10 @@ void run_Infinity() {
 			cout << "2) 5x5 Tic-Tac-Toe\n";
 			cout << "3) Misere Tic-Tac-Toe\n";
 			cout << "4) 4x4 XO Tic-Tac-Toe\n";
-			cout << "5) Numerical Tic-Tac-Toe\n";
-			cout << "6) Obstacles Tic-Tac-Toe\n";
-			cout << "7) Infinity Tic-Tac-Toe\n";
-			cout << "8) SUS Tic-Tac-Toe\n";
+			cout << "5) SUS Tic-Tac-Toe\n";
+			cout << "6) Numerical Tic-Tac-Toe\n";
+			cout << "7) Obstacles Tic-Tac-Toe\n";
+			cout << "8) Infinity Tic-Tac-Toe\n";
 			cout << "9) Exit\n";
 			cout << "\nEnter the Game Number to play: ";
 			int choice;
@@ -217,10 +215,10 @@ void run_Infinity() {
 			case 2: run_FiveByFive(); break;
 			case 3: run_Misere(); break;
 			case 4: run_XO4x4(); break;
-			case 5: run_Numerical9(); break;
-			case 6: run_Obstacles(); break;
-			case 7: run_Infinity(); break;
-			case 8: run_SUS(); break;
+			case 5: run_SUS(); break;
+			case 6: run_Numerical9(); break;
+			case 7: run_Obstacles(); break;
+			case 8: run_Infinity(); break;
 			case 9:
 				cout << "Goodbye\nReturn to the Arena ASAP!!\n";
 				return 0;

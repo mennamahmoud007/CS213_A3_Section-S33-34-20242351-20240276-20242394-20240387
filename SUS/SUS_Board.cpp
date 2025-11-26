@@ -1,5 +1,4 @@
-#include "SUS_Board.h"
-#include "SUS_Board.h"
+﻿#include "SUS_Board.h"
 #include <iostream>
 using namespace std;
 
@@ -29,7 +28,7 @@ int SUS_Board::count_SUS_sequences(int r, int c)
         count++;
     }
     //}
-    
+
 
     // Vertical
     //for(int c = 0; c < 3; c++){

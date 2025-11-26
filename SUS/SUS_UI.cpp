@@ -4,7 +4,7 @@ using namespace std;
 
 int SUS_UI::p = 0;
 
-SUS_UI::SUS_UI() : UI<char>("Welcome to S-U-S Game", 3) 
+SUS_UI::SUS_UI() : UI<char>("Welcome to S-U-S Game", 3)
 {
     p = 0;
 }
@@ -49,6 +49,6 @@ Move<char>* SUS_UI::get_move(Player<char>* player)
 //        cout << "Winner: Player 2 (U)\n";
 //    }
 //    else {
-//        cout << "It’s a DRAW!\n";
+//        cout << "It?s a DRAW!\n";
 //    }
 //}
