@@ -70,8 +70,8 @@ bool XO4x4_Board::update_board(Move<char>* move) {
 	int y = move->get_y();
 	char sym = move->get_symbol();
 
-	
-	int nx, ny;
+	int nx = next_nx;
+	int ny = next_ny;
 
 	if (x < 0 || x >= 4 || y < 0 || y >= 4) {
 		cout << "Invalid cell: row and column must be between 0-3.\nTry again." << endl;
@@ -82,13 +82,11 @@ bool XO4x4_Board::update_board(Move<char>* move) {
 		cout << "You must move your own token " << sym << endl;
 		return false;
 	}
-
-	cout << "Enter the new position for the token (row(0-3) , column(0-3)): ";
-	cin >> nx >> ny;
-
-	if (x < 0 || x >= 4 || y < 0 || y >= 4) return false;
-	if (nx < 0 || nx >= 4 || ny < 0 || ny >= 4) return false;
-
+	
+	if (nx < 0 || nx >= 4 || ny < 0 || ny >= 4) {
+		cout << "Invalid destination: row and column must be between 0-3.\nTry again\n";
+		return false;
+	}
 
 	if (board[nx][ny] != blank_symbol) {
 		cout << "Destination is not empty.\n";

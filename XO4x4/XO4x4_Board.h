@@ -20,6 +20,9 @@ public:
     bool is_lose(Player<char>* player) override { return false; }
     bool is_draw(Player<char>* player) override;
     bool game_is_over(Player<char>* player) override;
+
+    int next_nx = -1;
+    int next_ny = -1;
 };
 
 #endif
