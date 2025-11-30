@@ -7,12 +7,7 @@
   },
   "ExpandedNodes": [
     "",
-    "\\Framework",
-    "\\Obstacles",
-    "\\out",
-    "\\XO",
-    "\\XO4x4"
+    "\\Pyramid"
   ],
-  "SelectedNode": "\\Obstacles\\obstacles_Board.cpp",
   "PreviewInSolutionExplorer": false
 }

@@ -38,6 +38,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/cmake_install.cmake")
   include("C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO4x4/cmake_install.cmake")
   include("C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Obstacles/cmake_install.cmake")
+  include("C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Pyramid/cmake_install.cmake")
 
 endif()
 

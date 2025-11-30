@@ -8,7 +8,8 @@
 #include "XO4x4/XO4x4_UI.h"
 #include "Obstacles/obstacles_Board.h"
 #include "Obstacles/obstacles_UI.h"
-
+#include "Pyramid/Pyramid_Board.h"
+#include "Pyramid/Pyramid_UI.h"
 
 using namespace std;
 
@@ -78,7 +79,21 @@ void run_Obstacles() {
 	delete[] players;
 }
 
-/*------------------------------------------------------ SUS Game --------------------------------------------------------------*/
+/*----------------------------------------------- Pyramid Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Pyramid() {
+	UI<char>* game_ui = new PyramidUI();
+	Board<char>* board = new Pyramid_Board();
+	Player<char>** players = game_ui->setup_players();
+
+	GameManager<char> game(board, players, game_ui);
+	game.run();
+
+	delete board;
+	for (int i = 0; i < 2; i++)
+		delete players[i];
+	delete[] players;
+}
+
 
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 int main() {
@@ -93,7 +108,8 @@ int main() {
 		cout << "2) Numerical Tic-Tac-Toe\n";
 		cout << "3) 4x4 XO Tic-Tac-Toe\n";
 		cout << "4) Obstacles Tic-Tac-Toe\n";
-		cout << "5) Exit\n";
+		cout << "5) Pyramid Tic-Tac-Toe\n";
+		cout << "6) Exit\n";
 		cout << "\nEnter the Game Number to play: ";
 
 		int choice;
@@ -118,6 +134,9 @@ int main() {
 			break;
 
 		case 5:
+			run_Pyramid();
+			break;
+		case 6:
 			cout << "\nGoodbye\nReturn to the Arena ASAP!!\n";
 			return 0;
 

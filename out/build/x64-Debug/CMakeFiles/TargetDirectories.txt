@@ -13,3 +13,6 @@ C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out
 C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Obstacles/CMakeFiles/Obstacles.dir
 C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Obstacles/CMakeFiles/edit_cache.dir
 C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Obstacles/CMakeFiles/rebuild_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Pyramid/CMakeFiles/Pyramid.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Pyramid/CMakeFiles/edit_cache.dir
+C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Pyramid/CMakeFiles/rebuild_cache.dir
