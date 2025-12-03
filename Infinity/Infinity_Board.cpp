@@ -44,7 +44,7 @@ bool Infinity_Board::update_board(Move<char>* move) {
     moves.push({ x,y });
     n_moves++;
 
-    if (moves.size() > 3) {
+    if (n_moves > 3 && n_moves % 3 == 0) {
         remove_oldest();
     }
 

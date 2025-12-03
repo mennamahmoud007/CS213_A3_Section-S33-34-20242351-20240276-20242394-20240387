@@ -14,11 +14,13 @@ add_subdirectory(Numerical9)
 add_subdirectory(Misere) 
 add_subdirectory(FiveByFive) 
 add_subdirectory(Infinity)
+add_subdirectory(Diamond)
+add_subdirectory(Ultimate)
 
 
 
 # MAIN MENU executable
-add_executable(BoardGames Main.cpp "FiveByFive/FiveByFive_UI.cpp" "FiveByFive/FiveByFive_Board.h" "FiveByFive/FiveByFive_Board.cpp" "Infinity/Infinity_Board.cpp" "Infinity/Infinity_UI.h" "Infinity/Infinity_UI.cpp")
+add_executable(BoardGames Main.cpp)
 
-# Link the libraries from XO + Numerical9
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere FiveByFive Infinity)
+# Link the libraries 
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere FiveByFive Infinity Diamond Ultimate)

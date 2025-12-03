@@ -10,6 +10,11 @@
 #include "FiveByFive/FiveByFive_UI.h"
 #include "Infinity/Infinity_Board.h"
 #include "Infinity/Infinity_UI.h"
+#include "Diamond/Diamond_Board.h"
+#include "Diamond/Diamond_UI.h"
+#include "Ultimate/Ultimate_Board.h"
+#include "Ultimate/Ultimate_UI.h"
+
 
 
 using namespace std;
@@ -47,6 +52,21 @@ void run_Misere() {
 	delete[] players;
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------- Diamond Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Diamond() {
+	cout << "\nWelcome to Diamond Tic-Tac-Toe Game...\n";
+
+	UI<char>* game_ui = new Diamond_UI();
+	Board<char>* game_board = new Diamond_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> diamond_game(game_board, players, game_ui);
+	diamond_game.run();
+	delete game_board;
+	for (int i = 0; i < 2; ++i) delete players[i];
+	delete[] players;
+}
+/*----------------------------------------------------------------------------------------------------------------------------- */
 
 
 /*----------------------------------------------- Numerical Tic-Tac-Toe Game ---------------------------------------------*/
@@ -105,7 +125,7 @@ void run_FiveByFive() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
-/*----------------------------------------------- Numerical Tic-Tac-Toe Game ---------------------------------------------*/
+/*----------------------------------------------- Infinity Tic-Tac-Toe Game ---------------------------------------------*/
 void run_Infinity() {
 	cout << "\nWelcome to Infinity Tic-Tac-Toe...\n";
 
@@ -121,6 +141,20 @@ void run_Infinity() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*----------------------------------------------- Ultimate Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Ultimate() {
+	UI<char>* game_ui = new Ultimate_UI();
+	Board<char>* game_board = new UltimateBoard();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> g(game_board, players, game_ui);
+	g.run();
+	delete game_board;
+	for (int i = 0;i < 2;++i) delete players[i];
+	delete[] players;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 int main() {
@@ -134,8 +168,10 @@ int main() {
 		cout << "1) XO Game\n";
 		cout << "3) 5x5 Tic-Tac-Toe\n";
 		cout << "5) Misere Tic-Tac-Toe\n";
+		cout << "6) Diamond Tic-Tac-Toe\n";
 		cout << "9) Numerical Tic-Tac-Toe\n";
 		cout << "11) Infinity Tic-Tac-Toe\n";
+		cout << "12) Ultimate Tic-Tac-Toe\n";
 		cout << "14) Exit\n";
 		cout << "\nEnter the Game Number to play\n";
 
@@ -144,25 +180,20 @@ int main() {
 
 		switch (choice) {
 
-		case 1:
-			run_XO();
-			break;
+		case 1:run_XO();break;
 	
-		case 3:
-			run_FiveByFive();
-			break;
+		case 3:run_FiveByFive();break;
 
-		case 5:
-			run_Misere();
-			break;
+		case 5:run_Misere();break;
 
-		case 9:
-			run_Numerical9();
-			break;
+		case 6:run_Diamond();break;
 
-		case 11:
-			run_Infinity();
-			break;
+		case 9:run_Numerical9();break;
+
+		case 11:run_Infinity();break;
+
+		case 12:run_Ultimate();break;
+
 
 		case 14:
 			cout << "Goodbye\nReturn to the Arena ASAP!!\n";
