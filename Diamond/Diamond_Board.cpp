@@ -122,3 +122,25 @@ void Diamond_Board::display_board() {
         cout << "\n";
     }
 }
+
+void Diamond_Board::apply_move(int r, int c, char sym) {
+    board[r][c] = sym; 
+    n_moves++;
+}
+
+void Diamond_Board::undo_move(int r, int c) {
+    board[r][c] = blank; 
+    n_moves--;
+}
+
+vector<pair<int, int>> Diamond_Board::get_empty_cells() const {
+    vector<pair<int, int>> empties;
+    for (int r = 0; r < rows; ++r){
+        for (int c = 0; c < columns; ++c){
+            if (valid_cell(r, c) && board[r][c] == blank){
+                empties.push_back({ r, c });
+            }
+        }
+    }
+    return empties;
+}
