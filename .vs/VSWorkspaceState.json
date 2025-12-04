@@ -6,8 +6,9 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FourInARow"
   ],
-  "SelectedNode": "\\Main.cpp",
+  "SelectedNode": "\\FiveByFive",
   "PreviewInSolutionExplorer": false
 }

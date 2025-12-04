@@ -65,7 +65,3 @@ Move<char>* PyramidUI::get_move(Player<char>* player)
 
 
 
-/*
-    x = rand() % b->get_rows();
-    y = rand() % b->get_columns();
-*/

@@ -1,7 +1,4 @@
 #include "SUS_UI.h"
-#include "SUS_UI.h"
-#include "SUS_UI.h"
-#include "SUS_UI.h"
 #include <iostream>
 using namespace std;
 

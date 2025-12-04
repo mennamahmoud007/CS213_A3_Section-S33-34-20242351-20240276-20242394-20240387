@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-2024027
 #############################################
 # Order-only phony target for BoardGames
 
-build cmake_object_order_depends_target_BoardGames: phony || cmake_object_order_depends_target_FiveByFive cmake_object_order_depends_target_Infinity cmake_object_order_depends_target_Misere cmake_object_order_depends_target_Numerical9 cmake_object_order_depends_target_Obstacles cmake_object_order_depends_target_SUS cmake_object_order_depends_target_XO cmake_object_order_depends_target_XO4x4
+build cmake_object_order_depends_target_BoardGames: phony || cmake_object_order_depends_target_Diamond cmake_object_order_depends_target_FiveByFive cmake_object_order_depends_target_FourInARow cmake_object_order_depends_target_Infinity cmake_object_order_depends_target_Memory cmake_object_order_depends_target_Misere cmake_object_order_depends_target_Numerical9 cmake_object_order_depends_target_Obstacles cmake_object_order_depends_target_Pyramid cmake_object_order_depends_target_SUS cmake_object_order_depends_target_Ultimate cmake_object_order_depends_target_WordGame cmake_object_order_depends_target_XO cmake_object_order_depends_target_XO4x4
 
 build CMakeFiles\BoardGames.dir\Main.cpp.obj: CXX_COMPILER__BoardGames_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Main.cpp || cmake_object_order_depends_target_BoardGames
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
@@ -65,10 +65,10 @@ build CMakeFiles\BoardGames.dir\Main.cpp.obj: CXX_COMPILER__BoardGames_unscanned
 #############################################
 # Link the executable BoardGames.exe
 
-build BoardGames.exe: CXX_EXECUTABLE_LINKER__BoardGames_Debug CMakeFiles\BoardGames.dir\Main.cpp.obj | XO\XO.lib Numerical9\Numerical9.lib Misere\Misere.lib XO4x4\XO4x4.lib Obstacles\Obstacles.lib FiveByFive\FiveByFive.lib Infinity\Infinity.lib SUS\SUS.lib || FiveByFive\FiveByFive.lib Infinity\Infinity.lib Misere\Misere.lib Numerical9\Numerical9.lib Obstacles\Obstacles.lib SUS\SUS.lib XO4x4\XO4x4.lib XO\XO.lib
+build BoardGames.exe: CXX_EXECUTABLE_LINKER__BoardGames_Debug CMakeFiles\BoardGames.dir\Main.cpp.obj | XO\XO.lib Numerical9\Numerical9.lib Misere\Misere.lib XO4x4\XO4x4.lib Obstacles\Obstacles.lib FiveByFive\FiveByFive.lib Infinity\Infinity.lib SUS\SUS.lib FourInARow\FourInARow.lib Memory\Memory.lib Diamond\Diamond.lib Ultimate\Ultimate.lib Pyramid\Pyramid.lib WordGame\WordGame.lib || Diamond\Diamond.lib FiveByFive\FiveByFive.lib FourInARow\FourInARow.lib Infinity\Infinity.lib Memory\Memory.lib Misere\Misere.lib Numerical9\Numerical9.lib Obstacles\Obstacles.lib Pyramid\Pyramid.lib SUS\SUS.lib Ultimate\Ultimate.lib WordGame\WordGame.lib XO4x4\XO4x4.lib XO\XO.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = XO\XO.lib  Numerical9\Numerical9.lib  Misere\Misere.lib  XO4x4\XO4x4.lib  Obstacles\Obstacles.lib  FiveByFive\FiveByFive.lib  Infinity\Infinity.lib  SUS\SUS.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = XO\XO.lib  Numerical9\Numerical9.lib  Misere\Misere.lib  XO4x4\XO4x4.lib  Obstacles\Obstacles.lib  FiveByFive\FiveByFive.lib  Infinity\Infinity.lib  SUS\SUS.lib  FourInARow\FourInARow.lib  Memory\Memory.lib  Diamond\Diamond.lib  Ultimate\Ultimate.lib  Pyramid\Pyramid.lib  WordGame\WordGame.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\BoardGames.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -661,17 +661,455 @@ build SUS\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build SUS\rebuild_cache: phony SUS\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target FourInARow
+
+
+#############################################
+# Order-only phony target for FourInARow
+
+build cmake_object_order_depends_target_FourInARow: phony || .
+
+build FourInARow\CMakeFiles\FourInARow.dir\FourInARow_Board.cpp.obj: CXX_COMPILER__FourInARow_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FourInARow\FourInARow_Board.cpp || cmake_object_order_depends_target_FourInARow
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = FourInARow\CMakeFiles\FourInARow.dir
+  OBJECT_FILE_DIR = FourInARow\CMakeFiles\FourInARow.dir
+  TARGET_COMPILE_PDB = FourInARow\CMakeFiles\FourInARow.dir\FourInARow.pdb
+  TARGET_PDB = FourInARow\FourInARow.pdb
+
+build FourInARow\CMakeFiles\FourInARow.dir\FourInARow_UI.cpp.obj: CXX_COMPILER__FourInARow_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FourInARow\FourInARow_UI.cpp || cmake_object_order_depends_target_FourInARow
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = FourInARow\CMakeFiles\FourInARow.dir
+  OBJECT_FILE_DIR = FourInARow\CMakeFiles\FourInARow.dir
+  TARGET_COMPILE_PDB = FourInARow\CMakeFiles\FourInARow.dir\FourInARow.pdb
+  TARGET_PDB = FourInARow\FourInARow.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target FourInARow
+
+
+#############################################
+# Link the static library FourInARow\FourInARow.lib
+
+build FourInARow\FourInARow.lib: CXX_STATIC_LIBRARY_LINKER__FourInARow_Debug FourInARow\CMakeFiles\FourInARow.dir\FourInARow_Board.cpp.obj FourInARow\CMakeFiles\FourInARow.dir\FourInARow_UI.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = FourInARow\CMakeFiles\FourInARow.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = FourInARow\CMakeFiles\FourInARow.dir\FourInARow.pdb
+  TARGET_FILE = FourInARow\FourInARow.lib
+  TARGET_PDB = FourInARow\FourInARow.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build FourInARow\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\FourInARow && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build FourInARow\edit_cache: phony FourInARow\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build FourInARow\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\FourInARow && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387 -BC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build FourInARow\rebuild_cache: phony FourInARow\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Memory
+
+
+#############################################
+# Order-only phony target for Memory
+
+build cmake_object_order_depends_target_Memory: phony || .
+
+build Memory\CMakeFiles\Memory.dir\Memory_Board.cpp.obj: CXX_COMPILER__Memory_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Memory\Memory_Board.cpp || cmake_object_order_depends_target_Memory
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Memory\CMakeFiles\Memory.dir
+  OBJECT_FILE_DIR = Memory\CMakeFiles\Memory.dir
+  TARGET_COMPILE_PDB = Memory\CMakeFiles\Memory.dir\Memory.pdb
+  TARGET_PDB = Memory\Memory.pdb
+
+build Memory\CMakeFiles\Memory.dir\Memory_UI.cpp.obj: CXX_COMPILER__Memory_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Memory\Memory_UI.cpp || cmake_object_order_depends_target_Memory
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Memory\CMakeFiles\Memory.dir
+  OBJECT_FILE_DIR = Memory\CMakeFiles\Memory.dir
+  TARGET_COMPILE_PDB = Memory\CMakeFiles\Memory.dir\Memory.pdb
+  TARGET_PDB = Memory\Memory.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Memory
+
+
+#############################################
+# Link the static library Memory\Memory.lib
+
+build Memory\Memory.lib: CXX_STATIC_LIBRARY_LINKER__Memory_Debug Memory\CMakeFiles\Memory.dir\Memory_Board.cpp.obj Memory\CMakeFiles\Memory.dir\Memory_UI.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = Memory\CMakeFiles\Memory.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = Memory\CMakeFiles\Memory.dir\Memory.pdb
+  TARGET_FILE = Memory\Memory.lib
+  TARGET_PDB = Memory\Memory.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build Memory\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Memory && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Memory\edit_cache: phony Memory\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Memory\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Memory && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387 -BC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Memory\rebuild_cache: phony Memory\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Diamond
+
+
+#############################################
+# Order-only phony target for Diamond
+
+build cmake_object_order_depends_target_Diamond: phony || .
+
+build Diamond\CMakeFiles\Diamond.dir\Diamond_Board.cpp.obj: CXX_COMPILER__Diamond_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Diamond\Diamond_Board.cpp || cmake_object_order_depends_target_Diamond
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Diamond\CMakeFiles\Diamond.dir
+  OBJECT_FILE_DIR = Diamond\CMakeFiles\Diamond.dir
+  TARGET_COMPILE_PDB = Diamond\CMakeFiles\Diamond.dir\Diamond.pdb
+  TARGET_PDB = Diamond\Diamond.pdb
+
+build Diamond\CMakeFiles\Diamond.dir\Diamond_UI.cpp.obj: CXX_COMPILER__Diamond_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Diamond\Diamond_UI.cpp || cmake_object_order_depends_target_Diamond
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Diamond\CMakeFiles\Diamond.dir
+  OBJECT_FILE_DIR = Diamond\CMakeFiles\Diamond.dir
+  TARGET_COMPILE_PDB = Diamond\CMakeFiles\Diamond.dir\Diamond.pdb
+  TARGET_PDB = Diamond\Diamond.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Diamond
+
+
+#############################################
+# Link the static library Diamond\Diamond.lib
+
+build Diamond\Diamond.lib: CXX_STATIC_LIBRARY_LINKER__Diamond_Debug Diamond\CMakeFiles\Diamond.dir\Diamond_Board.cpp.obj Diamond\CMakeFiles\Diamond.dir\Diamond_UI.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = Diamond\CMakeFiles\Diamond.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = Diamond\CMakeFiles\Diamond.dir\Diamond.pdb
+  TARGET_FILE = Diamond\Diamond.lib
+  TARGET_PDB = Diamond\Diamond.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build Diamond\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Diamond && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Diamond\edit_cache: phony Diamond\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Diamond\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Diamond && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387 -BC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Diamond\rebuild_cache: phony Diamond\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Ultimate
+
+
+#############################################
+# Order-only phony target for Ultimate
+
+build cmake_object_order_depends_target_Ultimate: phony || .
+
+build Ultimate\CMakeFiles\Ultimate.dir\Ultimate_board.cpp.obj: CXX_COMPILER__Ultimate_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Ultimate\Ultimate_board.cpp || cmake_object_order_depends_target_Ultimate
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Ultimate\CMakeFiles\Ultimate.dir
+  OBJECT_FILE_DIR = Ultimate\CMakeFiles\Ultimate.dir
+  TARGET_COMPILE_PDB = Ultimate\CMakeFiles\Ultimate.dir\Ultimate.pdb
+  TARGET_PDB = Ultimate\Ultimate.pdb
+
+build Ultimate\CMakeFiles\Ultimate.dir\Ultimate_UI.cpp.obj: CXX_COMPILER__Ultimate_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Ultimate\Ultimate_UI.cpp || cmake_object_order_depends_target_Ultimate
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Ultimate\CMakeFiles\Ultimate.dir
+  OBJECT_FILE_DIR = Ultimate\CMakeFiles\Ultimate.dir
+  TARGET_COMPILE_PDB = Ultimate\CMakeFiles\Ultimate.dir\Ultimate.pdb
+  TARGET_PDB = Ultimate\Ultimate.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Ultimate
+
+
+#############################################
+# Link the static library Ultimate\Ultimate.lib
+
+build Ultimate\Ultimate.lib: CXX_STATIC_LIBRARY_LINKER__Ultimate_Debug Ultimate\CMakeFiles\Ultimate.dir\Ultimate_board.cpp.obj Ultimate\CMakeFiles\Ultimate.dir\Ultimate_UI.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = Ultimate\CMakeFiles\Ultimate.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = Ultimate\CMakeFiles\Ultimate.dir\Ultimate.pdb
+  TARGET_FILE = Ultimate\Ultimate.lib
+  TARGET_PDB = Ultimate\Ultimate.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build Ultimate\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Ultimate && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Ultimate\edit_cache: phony Ultimate\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Ultimate\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Ultimate && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387 -BC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Ultimate\rebuild_cache: phony Ultimate\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Pyramid
+
+
+#############################################
+# Order-only phony target for Pyramid
+
+build cmake_object_order_depends_target_Pyramid: phony || .
+
+build Pyramid\CMakeFiles\Pyramid.dir\Pyramid_Board.cpp.obj: CXX_COMPILER__Pyramid_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Pyramid\Pyramid_Board.cpp || cmake_object_order_depends_target_Pyramid
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Pyramid\CMakeFiles\Pyramid.dir
+  OBJECT_FILE_DIR = Pyramid\CMakeFiles\Pyramid.dir
+  TARGET_COMPILE_PDB = Pyramid\CMakeFiles\Pyramid.dir\Pyramid.pdb
+  TARGET_PDB = Pyramid\Pyramid.pdb
+
+build Pyramid\CMakeFiles\Pyramid.dir\Pyramid_UI.cpp.obj: CXX_COMPILER__Pyramid_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Pyramid\Pyramid_UI.cpp || cmake_object_order_depends_target_Pyramid
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = Pyramid\CMakeFiles\Pyramid.dir
+  OBJECT_FILE_DIR = Pyramid\CMakeFiles\Pyramid.dir
+  TARGET_COMPILE_PDB = Pyramid\CMakeFiles\Pyramid.dir\Pyramid.pdb
+  TARGET_PDB = Pyramid\Pyramid.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Pyramid
+
+
+#############################################
+# Link the static library Pyramid\Pyramid.lib
+
+build Pyramid\Pyramid.lib: CXX_STATIC_LIBRARY_LINKER__Pyramid_Debug Pyramid\CMakeFiles\Pyramid.dir\Pyramid_Board.cpp.obj Pyramid\CMakeFiles\Pyramid.dir\Pyramid_UI.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = Pyramid\CMakeFiles\Pyramid.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = Pyramid\CMakeFiles\Pyramid.dir\Pyramid.pdb
+  TARGET_FILE = Pyramid\Pyramid.lib
+  TARGET_PDB = Pyramid\Pyramid.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build Pyramid\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Pyramid && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Pyramid\edit_cache: phony Pyramid\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Pyramid\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\Pyramid && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387 -BC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Pyramid\rebuild_cache: phony Pyramid\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target WordGame
+
+
+#############################################
+# Order-only phony target for WordGame
+
+build cmake_object_order_depends_target_WordGame: phony || .
+
+build WordGame\CMakeFiles\WordGame.dir\Word_Board.cpp.obj: CXX_COMPILER__WordGame_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\WordGame\Word_Board.cpp || cmake_object_order_depends_target_WordGame
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = WordGame\CMakeFiles\WordGame.dir
+  OBJECT_FILE_DIR = WordGame\CMakeFiles\WordGame.dir
+  TARGET_COMPILE_PDB = WordGame\CMakeFiles\WordGame.dir\WordGame.pdb
+  TARGET_PDB = WordGame\WordGame.pdb
+
+build WordGame\CMakeFiles\WordGame.dir\Word_Board_UI.cpp.obj: CXX_COMPILER__WordGame_unscanned_Debug C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\WordGame\Word_Board_UI.cpp || cmake_object_order_depends_target_WordGame
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Framework
+  OBJECT_DIR = WordGame\CMakeFiles\WordGame.dir
+  OBJECT_FILE_DIR = WordGame\CMakeFiles\WordGame.dir
+  TARGET_COMPILE_PDB = WordGame\CMakeFiles\WordGame.dir\WordGame.pdb
+  TARGET_PDB = WordGame\WordGame.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target WordGame
+
+
+#############################################
+# Link the static library WordGame\WordGame.lib
+
+build WordGame\WordGame.lib: CXX_STATIC_LIBRARY_LINKER__WordGame_Debug WordGame\CMakeFiles\WordGame.dir\Word_Board.cpp.obj WordGame\CMakeFiles\WordGame.dir\Word_Board_UI.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = WordGame\CMakeFiles\WordGame.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = WordGame\CMakeFiles\WordGame.dir\WordGame.pdb
+  TARGET_FILE = WordGame\WordGame.lib
+  TARGET_PDB = WordGame\WordGame.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build WordGame\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\WordGame && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build WordGame\edit_cache: phony WordGame\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build WordGame\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug\WordGame && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387 -BC:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build WordGame\rebuild_cache: phony WordGame\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build BoardGames: phony BoardGames.exe
+
+build Diamond: phony Diamond\Diamond.lib
+
+build Diamond.lib: phony Diamond\Diamond.lib
 
 build FiveByFive: phony FiveByFive\FiveByFive.lib
 
 build FiveByFive.lib: phony FiveByFive\FiveByFive.lib
 
+build FourInARow: phony FourInARow\FourInARow.lib
+
+build FourInARow.lib: phony FourInARow\FourInARow.lib
+
 build Infinity: phony Infinity\Infinity.lib
 
 build Infinity.lib: phony Infinity\Infinity.lib
+
+build Memory: phony Memory\Memory.lib
+
+build Memory.lib: phony Memory\Memory.lib
 
 build Misere: phony Misere\Misere.lib
 
@@ -685,9 +1123,21 @@ build Obstacles: phony Obstacles\Obstacles.lib
 
 build Obstacles.lib: phony Obstacles\Obstacles.lib
 
+build Pyramid: phony Pyramid\Pyramid.lib
+
+build Pyramid.lib: phony Pyramid\Pyramid.lib
+
 build SUS: phony SUS\SUS.lib
 
 build SUS.lib: phony SUS\SUS.lib
+
+build Ultimate: phony Ultimate\Ultimate.lib
+
+build Ultimate.lib: phony Ultimate\Ultimate.lib
+
+build WordGame: phony WordGame\WordGame.lib
+
+build WordGame.lib: phony WordGame\WordGame.lib
 
 build XO: phony XO\XO.lib
 
@@ -705,7 +1155,14 @@ build XO4x4.lib: phony XO4x4\XO4x4.lib
 #############################################
 # Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug
 
-build all: phony BoardGames.exe XO\all Numerical9\all Misere\all XO4x4\all Obstacles\all FiveByFive\all Infinity\all SUS\all
+build all: phony BoardGames.exe XO\all Numerical9\all Misere\all XO4x4\all Obstacles\all FiveByFive\all Infinity\all SUS\all FourInARow\all Memory\all Diamond\all Ultimate\all Pyramid\all WordGame\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Diamond
+
+build Diamond\all: phony Diamond\Diamond.lib
 
 # =============================================================================
 
@@ -717,9 +1174,23 @@ build FiveByFive\all: phony FiveByFive\FiveByFive.lib
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/FourInARow
+
+build FourInARow\all: phony FourInARow\FourInARow.lib
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Infinity
 
 build Infinity\all: phony Infinity\Infinity.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Memory
+
+build Memory\all: phony Memory\Memory.lib
 
 # =============================================================================
 
@@ -745,9 +1216,30 @@ build Obstacles\all: phony Obstacles\Obstacles.lib
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Pyramid
+
+build Pyramid\all: phony Pyramid\Pyramid.lib
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/SUS
 
 build SUS\all: phony SUS\SUS.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Ultimate
+
+build Ultimate\all: phony Ultimate\Ultimate.lib
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/WordGame
+
+build WordGame\all: phony WordGame\WordGame.lib
 
 # =============================================================================
 
@@ -770,14 +1262,14 @@ build XO4x4\all: phony XO4x4\XO4x4.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FiveByFive\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Infinity\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Misere\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Numerical9\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Obstacles\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\SUS\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO4x4\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Diamond\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FiveByFive\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FourInARow\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Infinity\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Memory\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Misere\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Numerical9\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Obstacles\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Pyramid\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\SUS\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Ultimate\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\WordGame\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO4x4\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX-CXXImportStd.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FiveByFive\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Infinity\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Misere\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Numerical9\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Obstacles\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\SUS\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO4x4\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Diamond\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FiveByFive\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\FourInARow\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Infinity\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Memory\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Misere\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Numerical9\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Obstacles\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Pyramid\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\SUS\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\Ultimate\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\WordGame\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO4x4\CMakeLists.txt C$:\Users\Yasmine\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\XO\CMakeLists.txt CMakeCache.txt CMakeFiles\3.31.6-msvc6\CMakeCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake: phony
 
 
 #############################################

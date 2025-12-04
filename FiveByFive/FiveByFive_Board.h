@@ -20,6 +20,11 @@ public:
     bool game_is_over(Player<char>* player) override;
     int count_three_in_row(char sym) const;
     void display_board();
+
+    char get_cell(int r, int c) const { return board[r][c]; }
+    void apply_move(int r, int c, char sym);
+    void undo_move(int r, int c);
+    vector<pair<int, int>> get_empty_cells() const;
 };
 
 #endif

@@ -25,6 +25,11 @@ public:
     bool is_lose(Player<char>* player);
     bool is_draw(Player<char>* player);
     bool game_is_over(Player<char>* player);
+
+    char get_cell(int r, int c) const { return board[r][c]; }
+    void apply_move(int r, int c, char sym);
+    void undo_move(int r, int c);
+    vector<pair<int, int>> get_empty_cells() const;
 };
 
 #endif

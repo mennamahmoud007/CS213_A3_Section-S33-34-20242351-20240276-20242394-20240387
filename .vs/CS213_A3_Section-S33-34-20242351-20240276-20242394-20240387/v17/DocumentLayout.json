@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FourInARow\\FourInARow_UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FiveByFive\\FiveByFive_Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FourInARow\\FourInARow_UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FiveByFive\\FiveByFive_Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FiveByFive\\FiveByFive_UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FourInARow\\FourInARow_Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FiveByFive\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\Misere\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Misere\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FourInARow\\FourInARow_Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,74 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FiveByFive_Board.cpp",
-              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_Board.cpp",
-              "RelativeDocumentMoniker": "FiveByFive\\FiveByFive_Board.cpp",
-              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_Board.cpp",
-              "RelativeToolTip": "FiveByFive\\FiveByFive_Board.cpp",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-25T09:57:27.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FiveByFive_Board.h",
-              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_Board.h",
-              "RelativeDocumentMoniker": "FiveByFive\\FiveByFive_Board.h",
-              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_Board.h",
-              "RelativeToolTip": "FiveByFive\\FiveByFive_Board.h",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBUAAAAYAAAAAAAAAA==",
+              "Title": "FiveByFive_UI.h",
+              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_UI.h",
+              "RelativeDocumentMoniker": "FiveByFive\\FiveByFive_UI.h",
+              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\FiveByFive_UI.h",
+              "RelativeToolTip": "FiveByFive\\FiveByFive_UI.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-25T09:57:05.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "CMakeLists.txt",
-              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\CMakeLists.txt",
-              "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBcAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-25T09:51:05.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\Misere\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "Misere\\CMakeLists.txt",
-              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\Misere\\CMakeLists.txt",
-              "RelativeToolTip": "Misere\\CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-25T09:49:49.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "FiveByFive\\CMakeLists.txt",
-              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FiveByFive\\CMakeLists.txt",
-              "RelativeToolTip": "FiveByFive\\CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-25T09:49:45.11Z"
+              "WhenOpened": "2025-12-04T20:41:04.386Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\Main.cpp",
-              "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\Main.cpp",
-              "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAkwKEAAAAtAAAAAAAAAA==",
+              "Title": "FourInARow_UI.cpp",
+              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_UI.cpp",
+              "RelativeDocumentMoniker": "FourInARow\\FourInARow_UI.cpp",
+              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_UI.cpp",
+              "RelativeToolTip": "FourInARow\\FourInARow_UI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-25T09:40:39.287Z",
+              "WhenOpened": "2025-12-04T20:32:32.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FourInARow_UI.h",
+              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_UI.h",
+              "RelativeDocumentMoniker": "FourInARow\\FourInARow_UI.h",
+              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_UI.h",
+              "RelativeToolTip": "FourInARow\\FourInARow_UI.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-04T20:32:31.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FourInARow_Board.h",
+              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_Board.h",
+              "RelativeDocumentMoniker": "FourInARow\\FourInARow_Board.h",
+              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_Board.h",
+              "RelativeToolTip": "FourInARow\\FourInARow_Board.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-04T20:32:27.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FourInARow_Board.cpp",
+              "DocumentMoniker": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_Board.cpp",
+              "RelativeDocumentMoniker": "FourInARow\\FourInARow_Board.cpp",
+              "ToolTip": "C:\\Users\\Yasmine\\CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387\\FourInARow\\FourInARow_Board.cpp",
+              "RelativeToolTip": "FourInARow\\FourInARow_Board.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-04T20:32:26.666Z",
               "EditorCaption": ""
             }
           ]

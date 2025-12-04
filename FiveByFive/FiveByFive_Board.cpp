@@ -109,3 +109,26 @@ void FiveByFive_Board::display_board() {
         cout << "Three-in-a-row sequences - X: " << x_count << " | O: " << o_count << endl;
     }
 }
+
+void FiveByFive_Board::apply_move(int r, int c, char sym) {
+    board[r][c] = sym;
+    n_moves++;
+}
+
+void FiveByFive_Board::undo_move(int r, int c) {
+    board[r][c] = blank;
+    n_moves--;
+}
+
+vector<pair<int, int>> FiveByFive_Board::get_empty_cells() const {
+    vector<pair<int, int>> cells;
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < columns; c++) {
+            if (board[r][c] == blank) {
+                cells.push_back({ r,c });
+            }
+        }
+    }
+
+    return cells;
+}

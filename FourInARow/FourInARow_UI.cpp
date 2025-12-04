@@ -1,6 +1,12 @@
 ﻿#include "FourInARow_UI.h"
+#include "FourInARow_UI.h"
 
 FourInARow_UI::FourInARow_UI() : UI<char>("Welcome to Four-in-a-Row!", 3) {}
+
+int FourInARow_UI::evaluate(FourInARow_Board* fb, char aiSym)
+{
+    return 0;
+}
 
 Player<char>* FourInARow_UI::create_player(string& name, char symbol, PlayerType type) {
     cout << "Creating " << (type == PlayerType::HUMAN ? "human" : "computer")
