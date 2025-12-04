@@ -121,4 +121,44 @@ bool XO4x4_Board::game_is_over(Player<char>* p) {
 }
 
 
+void XO4x4_Board::apply_move(int x, int y, int nx, int ny, char sym)
+{
+	board[x][y] = '.';
+	board[nx][ny] = sym;
+}
+
+
+void XO4x4_Board::undo_move(int x, int y, int nx, int ny, char sym)
+{
+	board[x][y] = sym;
+	board[nx][ny] = '.';
+}
+
+
+vector<tuple<int, int, int, int>> XO4x4_Board::get_legal_moves(char sym) const
+{
+	vector<tuple<int, int, int, int>> moves;
+	for (int r = 0; r < rows; r++) {
+		for (int c = 0; c < columns; c++) {
+			if (board[r][c] == sym) {
+				int dr[4] = { 1,-1,0,0 };
+				int dc[4] = { 0,0,1,-1 };
+
+				for (int k = 0; k < 4; k++) {
+					int nr = r + dr[k];
+					int nc = c + dc[k];
+
+					if (nr >= 0 && nr < 4 && nc >= 0 && nc < 4) {
+						if (board[nr][nc] == '.') {
+							moves.push_back({ r,c,nr,nc });
+						}
+					}
+				}
+			}
+		}
+	}
+	return moves;
+}
+
+
 
