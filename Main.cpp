@@ -26,7 +26,8 @@
 #include "Pyramid/Pyramid_UI.h"
 #include "Memory/Memory_Board.h"
 #include "Memory/Memory_UI.h"
-
+#include "WordGame/Word_Board.h"
+#include "WordGame/Word_Board_UI.h"
 using namespace std;
 
 /*------------------------------------------------------ XO Game --------------------------------------------------------------*/
@@ -276,6 +277,29 @@ void run_Diamond() {
 }
 /*----------------------------------------------------------------------------------------------------------------------------- */
 
+
+/*----------------------------------------------------------- WordGame --------------------------------------------------------*/
+void run_WordGame() {
+
+	WordUI* word_ui = new WordUI();
+	WordBoard* word_board = new WordBoard();
+
+	word_ui->display_word_rules();
+
+	Player<char>** players = word_ui->setup_players();
+	GameManager<char> word_game(word_board, players, word_ui);
+	word_game.run();
+
+	delete word_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
+	delete word_ui;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 
 	int main() {
@@ -307,7 +331,7 @@ void run_Diamond() {
 			case 2: run_SUS(); break;
 			case 3: run_FourInARow(); break;
 			case 4: run_FiveByFive();break;
-			//case 5: run_word(); break;
+			case 5: run_WordGame(); break;
 			case 6: run_Misere(); break;
 			case 7: run_Diamond(); break;
 			case 8: run_XO4x4(); break;
