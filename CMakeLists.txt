@@ -17,11 +17,16 @@ add_subdirectory(Obstacles)
 add_subdirectory(FiveByFive) 
 add_subdirectory(Infinity)
 add_subdirectory(SUS)
+add_subdirectory(FourInARow)
+add_subdirectory(Memory)
+add_subdirectory(Diamond)
+add_subdirectory(Ultimate)
+add_subdirectory(Pyramid)
 
 
 # MAIN MENU executable 
 add_executable(BoardGames Main.cpp)
 
 # Link the libraries from games
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere XO4x4 Obstacles FiveByFive Infinity SUS)
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere XO4x4 Obstacles FiveByFive Infinity SUS FourInARow Memory Diamond Ultimate Pyramid)
 
