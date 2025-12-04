@@ -16,6 +16,17 @@
 #include "Infinity/Infinity_UI.h"
 #include "SUS/SUS_Board.h"
 #include "SUS/SUS_UI.h"
+#include "FourInARow/FourInARow_Board.h"
+#include "FourInARow/FourInARow_UI.h"
+#include "Diamond/Diamond_Board.h"
+#include "Diamond/Diamond_UI.h"
+#include "Ultimate/Ultimate_Board.h"
+#include "Ultimate/Ultimate_UI.h"
+#include "Pyramid/Pyramid_Board.h"
+#include "Pyramid/Pyramid_UI.h"
+#include "Memory/Memory_Board.h"
+#include "Memory/Memory_UI.h"
+
 using namespace std;
 
 /*------------------------------------------------------ XO Game --------------------------------------------------------------*/
@@ -68,6 +79,21 @@ void run_SUS() {
 	}
 	delete[] players;
 	delete game_ui;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------- FourInARow Tic-Tac-Toe Game ---------------------------------------------*/
+void run_FourInARow() {
+	UI<char>* game_ui = new FourInARow_UI();
+	Board<char>* game_board = new FourInARow_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> FourInARow_game(game_board, players, game_ui);
+	FourInARow_game.run();
+	delete game_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -125,6 +151,22 @@ void run_Misere() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*----------------------------------------------- Memory Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Memory() {
+	UI<char>* game_ui = new Memory_UI();
+	Board<char>* game_board = new Memory_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> Memory_game(game_board, players, game_ui);
+	Memory_game.run();
+	delete game_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
 
 /*----------------------------------------------- 4x4 XO Tic-Tac-Toe Game ---------------------------------------------*/
 void run_XO4x4() {
@@ -175,6 +217,21 @@ void run_Obstacles() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*----------------------------------------------- Pyramid Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Pyramid() {
+	UI<char>* game_ui = new PyramidUI();
+	Board<char>* board = new Pyramid_Board();
+	Player<char>** players = game_ui->setup_players();
+
+	GameManager<char> game(board, players, game_ui);
+	game.run();
+
+	delete board;
+	for (int i = 0; i < 2; i++)
+		delete players[i];
+	delete[] players;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /*----------------------------------------------- Infinity Tic-Tac-Toe Game ---------------------------------------------*/
 void run_Infinity() {
@@ -190,6 +247,35 @@ void run_Infinity() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*----------------------------------------------- Ultimate Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Ultimate() {
+	UI<char>* game_ui = new Ultimate_UI();
+	Board<char>* game_board = new UltimateBoard();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> g(game_board, players, game_ui);
+	g.run();
+	delete game_board;
+	for (int i = 0;i < 2;++i) delete players[i];
+	delete[] players;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------- Diamond Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Diamond() {
+	cout << "\nWelcome to Diamond Tic-Tac-Toe Game...\n";
+
+	UI<char>* game_ui = new Diamond_UI();
+	Board<char>* game_board = new Diamond_Board();
+	Player<char>** players = game_ui->setup_players();
+	GameManager<char> diamond_game(game_board, players, game_ui);
+	diamond_game.run();
+	delete game_board;
+	for (int i = 0; i < 2; ++i) delete players[i];
+	delete[] players;
+}
+/*----------------------------------------------------------------------------------------------------------------------------- */
+
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 
 	int main() {
@@ -198,28 +284,40 @@ void run_Infinity() {
 			cout << "\n=============================\n";
 			cout << "\n       GAMES ARENA\n";
 			cout << "\n=============================\n";
-			cout << "1) XO Game\n";
-			cout << "2) 5x5 Tic-Tac-Toe\n";
-			cout << "3) Misere Tic-Tac-Toe\n";
-			cout << "4) 4x4 XO Tic-Tac-Toe\n";
-			cout << "5) SUS Tic-Tac-Toe\n";
-			cout << "6) Numerical Tic-Tac-Toe\n";
-			cout << "7) Obstacles Tic-Tac-Toe\n";
-			cout << "8) Infinity Tic-Tac-Toe\n";
-			cout << "9) Exit\n";
+			cout << "1) Ordinary XO Game\n";
+			cout << "2) SUS Tic-Tac-Toe\n";
+			cout << "3) Connect 4 Tic-Tac-Toe\n";
+			cout << "4) 5x5 Tic-Tac-Toe\n";
+			cout << "5) Word Tic-Tac-Toe\n";
+			cout << "6) Misere Tic-Tac-Toe\n";
+			cout << "7) Diamond Tic-Tac-Toe\n";
+			cout << "8) 4x4 XO Tic-Tac-Toe\n";
+			cout << "9) Pyramid Tic-Tac-Toe\n";
+			cout << "10) Numerical Tic-Tac-Toe\n";
+			cout << "11) Obstacles Tic-Tac-Toe\n";
+			cout << "12) Infinity Tic-Tac-Toe\n";
+			cout << "13) Ultimate Tic-Tac-Toe\n";
+			cout << "14) Memory Tic-Tac-Toe\n";
+			cout << "15) Exit\n";
 			cout << "\nEnter the Game Number to play: ";
 			int choice;
 			cin >> choice;
 			switch (choice) {
 			case 1: run_XO(); break;
-			case 2: run_FiveByFive(); break;
-			case 3: run_Misere(); break;
-			case 4: run_XO4x4(); break;
-			case 5: run_SUS(); break;
-			case 6: run_Numerical9(); break;
-			case 7: run_Obstacles(); break;
-			case 8: run_Infinity(); break;
-			case 9:
+			case 2: run_SUS(); break;
+			case 3: run_FourInARow(); break;
+			case 4: run_FiveByFive();break;
+			//case 5: run_word(); break;
+			case 6: run_Misere(); break;
+			case 7: run_Diamond(); break;
+			case 8: run_XO4x4(); break;
+			case 9: run_Pyramid(); break;
+			case 10: run_Numerical9(); break;
+			case 11: run_Obstacles(); break;
+			case 12: run_Infinity(); break;
+			case 13: run_Ultimate();break;
+			case 14: run_Memory(); break;
+			case 15:
 				cout << "Goodbye\nReturn to the Arena ASAP!!\n";
 				return 0;
 			default:
