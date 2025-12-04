@@ -1,4 +1,9 @@
 ﻿#include "FourInARow_Board.h"
+#include "FourInARow_Board.h"
+#include "FourInARow_Board.h"
+#include "FourInARow_Board.h"
+#include "FourInARow_Board.h"
+#include "FourInARow_Board.h"
 #include <iostream>
 using namespace std;
 
@@ -77,29 +82,41 @@ bool FourInARow_Board::game_is_over(Player<char>* player) {
     return is_win(player) || is_lose(player) || is_draw(player);
 }
 
+int FourInARow_Board::get_next_open_row(int col) const
+{
+    for (int r = rows - 1; r >= 0; r--) {
+        if (board[r][col] == ' ')
+            return r;
+    }
+    return -1;
+}
+
+bool FourInARow_Board::is_column_full(int col) const
+{
+    return board[0][col] != ' ';
+}
+
+vector<int> FourInARow_Board::get_valid_columns() const
+{
+    vector<int> valid;
+    for (int c = 0; c < columns; c++) {
+        if (!is_column_full(c))
+            valid.push_back(c);
+    }
+    return valid;
+}
+
+void FourInARow_Board::apply_move(int col, char sym)
+{
+    int row = get_next_open_row(col);
+    if (row != -1) board[row][col] = sym;
+}
+
+void FourInARow_Board::undo_move(int row, int col) {
+    board[row][col] = ' ';
+}
+
 vector<vector<char>>& FourInARow_Board::get_board_matrix() {
     return board;
 }
 
-void FourInARow_Board::apply_move(int r, int c, char sym) {
-    board[r][c] = sym;
-    n_moves++;
-}
-
-void FourInARow_Board::undo_move(int r, int c) {
-    board[r][c] = blank;
-    n_moves--;
-}
-
-vector<pair<int, int>> FourInARow_Board::get_empty_cells() const {
-    vector<pair<int, int>> cells;
-    for (int r = 0; r < rows; r++) {
-        for (int c = 0; c < columns; c++) {
-            if (board[r][c] == blank) {
-                cells.push_back({ r,c });
-            }
-        }
-    }
-
-    return cells;
-}

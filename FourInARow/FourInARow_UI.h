@@ -2,18 +2,17 @@
 #define FOURINAROW_UI_H
 
 #include "BoardGame_Classes.h"
-#include <iostream>
-#include <string>
-#include <cstdlib> // for rand()
+#include "FourInARow_Board.h"
 using namespace std;
 
 class FourInARow_UI : public UI<char> {
 public:
     FourInARow_UI();
 
-    int evaluate(FourInARow_Board* fb, char aiSym);
-    int minimax(FourInARow_Board* fb, int depth, bool maximizing, char aiSym);
-    void choose_best_move(FourInARow_Board* fb, char aiSym, int& bestCol);
+    int choose_best_column(FourInARow_Board* fb, char aiSym);
+    //int evaluate(FourInARow_Board* fb, char aiSym);
+    //int minimax(FourInARow_Board* fb, int depth, bool maximizing, char aiSym);
+    //void choose_best_move(FourInARow_Board* fb, char aiSym, int& bestCol);
 
     Player<char>* create_player(string& name, char symbol, PlayerType type);
     Move<char>* get_move(Player<char>* player);

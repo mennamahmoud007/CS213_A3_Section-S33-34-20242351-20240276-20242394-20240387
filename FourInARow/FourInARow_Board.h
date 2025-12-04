@@ -13,12 +13,11 @@ private:
     const int cols = 7;
     const char blank = ' ';
 
-    bool check_four_in_a_row(char symbol);
-
 public:
     FourInARow_Board();
     ~FourInARow_Board();
 
+    bool check_four_in_a_row(char symbol);
     vector<vector<char>>& get_board_matrix();
     bool update_board(Move<char>* move);
     bool is_win(Player<char>* player);
@@ -26,10 +25,11 @@ public:
     bool is_draw(Player<char>* player);
     bool game_is_over(Player<char>* player);
 
-    char get_cell(int r, int c) const { return board[r][c]; }
-    void apply_move(int r, int c, char sym);
-    void undo_move(int r, int c);
-    vector<pair<int, int>> get_empty_cells() const;
+    int get_next_open_row(int col) const;
+    bool is_column_full(int col) const;
+    vector<int> get_valid_columns() const;
+    void apply_move(int col, char sym);
+    void undo_move(int row, int col);
 };
 
 #endif

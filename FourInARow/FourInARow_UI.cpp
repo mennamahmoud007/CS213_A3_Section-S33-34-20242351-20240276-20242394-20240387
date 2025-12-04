@@ -1,11 +1,56 @@
 ﻿#include "FourInARow_UI.h"
-#include "FourInARow_UI.h"
+#include <iostream>
+
+using namespace std;
 
 FourInARow_UI::FourInARow_UI() : UI<char>("Welcome to Four-in-a-Row!", 3) {}
 
-int FourInARow_UI::evaluate(FourInARow_Board* fb, char aiSym)
+int FourInARow_UI::choose_best_column(FourInARow_Board* fb, char aiSym)
 {
-    return 0;
+    char oppSym = (aiSym == 'X' ? 'O' : 'X');
+    vector<int> valid = fb->get_valid_columns();
+
+    for (size_t i = 0; i < valid.size(); i++) {
+        int col = valid[i];
+        int row = fb->get_next_open_row(col);
+
+        fb->apply_move(col, aiSym);
+        bool win = fb->check_four_in_a_row(aiSym);
+        fb->undo_move(row, col);
+
+        if (win) return col; // winning move
+    }
+
+    for (size_t i = 0; i < valid.size(); i++) {
+        int col = valid[i];
+        int row = fb->get_next_open_row(col);
+
+        fb->apply_move(col, oppSym);
+        bool oppWin = fb->check_four_in_a_row(oppSym);
+        fb->undo_move(row, col);
+
+        if (oppWin) return col; // block loss
+    }
+
+    for (size_t i = 0; i < valid.size(); i++) {
+        int col = valid[i];
+        int row = fb->get_next_open_row(col);
+
+        fb->apply_move(col, aiSym);
+        bool threat = fb->check_four_in_a_row(aiSym);  // partial check
+        fb->undo_move(row, col);
+
+        if (threat) return col;
+    }
+
+    int order[7] = { 3, 2, 4, 1, 5, 0, 6 };
+    for (int i = 0; i < 7; i++) {
+        int col = order[i];
+        if (!fb->is_column_full(col))
+            return col;
+    }
+
+    return valid[0];
 }
 
 Player<char>* FourInARow_UI::create_player(string& name, char symbol, PlayerType type) {
@@ -21,7 +66,14 @@ Move<char>* FourInARow_UI::get_move(Player<char>* player) {
         cin >> col;
     }
     else {
-        col = rand() % 7; // random column
+        Board<char>* b = player->get_board_ptr();
+        FourInARow_Board* fb = dynamic_cast<FourInARow_Board*>(b);
+
+        char aiSym = player->get_symbol();
+
+        int col = choose_best_column(fb, aiSym);
+
+        return new Move<char>(0, col, aiSym);
     }
 
     // Row will be determined by the board automatically (lowest empty slot)
