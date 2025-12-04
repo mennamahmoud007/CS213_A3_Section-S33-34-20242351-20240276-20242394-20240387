@@ -75,3 +75,22 @@ bool WordBoard::is_draw(Player<char>* player) {
 bool WordBoard::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
+
+void WordBoard::apply_move(int r, int c, char letter) {
+    board[r][c] = toupper(letter); 
+    n_moves++;
+}
+
+void WordBoard::undo_move(int r, int c) {
+    board[r][c] = blank_symbol; 
+    n_moves--;
+}
+
+vector<pair<int, int>> WordBoard::get_empty_cells() const {
+    vector<pair<int, int>> empties;
+    for (int r = 0; r < 3; r++)
+        for (int c = 0; c < 3; c++)
+            if (board[r][c] == blank_symbol)
+                empties.push_back({ r,c });
+    return empties;
+}
