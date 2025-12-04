@@ -22,6 +22,12 @@ public:
     int score_S = 0;
     int score_U = 0;
     
+    char get_cell(int r, int c) const { return board[r][c]; }
+    bool is_empty(int r, int c) const { return board[r][c] == blank_symbol; }
+    void apply_move(int r, int c, char sym);
+    void undo_move(int r, int c);
+    vector<pair<int, int>> get_empty_cells() const;
+    int count_all_SUS_sequences() const;
 };
 
 #endif
