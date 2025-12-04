@@ -14,10 +14,11 @@ add_subdirectory(Numerical9)
 add_subdirectory(XO4x4) 
 add_subdirectory(Obstacles)
 add_subdirectory(Pyramid)
-
+add_subdirectory(Memory)
+ 
 
 # MAIN MENU executable
 add_executable(BoardGames Main.cpp)
 
 # Link the libraries from XO + Numerical9
-target_link_libraries(BoardGames PRIVATE XO Numerical9 XO4x4 Obstacles Pyramid)
+target_link_libraries(BoardGames PRIVATE XO Numerical9 XO4x4 Obstacles Pyramid Memory)

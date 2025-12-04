@@ -7,6 +7,7 @@ using namespace std;
 
 class Pyramid_Board : public Board<char> {
 private:
+	/*char blank_symbol = ' . ';*/
 	char blocked_symbol = '#';
 	vector<vector<pair<int, int>>> winLines;
 
@@ -19,7 +20,14 @@ public:
 	bool is_lose(Player<char>* player) override { return false; }
 	bool is_draw(Player<char>* player) override;
 	bool game_is_over(Player<char>* player) override;
-	void display_board();
+
+	// Added Functions for AI Player
+	vector<vector<pair<int, int>>> get_win_lines() const { return winLines; }		// getter for possible wins
+	char get_cell(int r, int c) const { return board[r][c]; }						// getter for the board cell 
+	void apply_move(int r, int c, char sym);										// setter for simulated move
+	void undo_move(int r, int c);													// remove the simulated move 
+	vector<pair<int, int>> get_empty_cells() const;									// getter for the empty cells
+	bool is_win_for_symbol(char sym);												// check if_win for simulated move
 };
 
 

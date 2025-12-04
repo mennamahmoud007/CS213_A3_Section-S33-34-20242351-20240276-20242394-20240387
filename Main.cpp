@@ -10,6 +10,8 @@
 #include "Obstacles/obstacles_UI.h"
 #include "Pyramid/Pyramid_Board.h"
 #include "Pyramid/Pyramid_UI.h"
+#include "Memory/Memory_Board.h"
+#include "Memory/Memory_UI.h"
 
 using namespace std;
 
@@ -78,11 +80,30 @@ void run_Obstacles() {
 		delete players[i];
 	delete[] players;
 }
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
 
 /*----------------------------------------------- Pyramid Tic-Tac-Toe Game ---------------------------------------------*/
 void run_Pyramid() {
 	UI<char>* game_ui = new PyramidUI();
 	Board<char>* board = new Pyramid_Board();
+	Player<char>** players = game_ui->setup_players();
+
+	GameManager<char> game(board, players, game_ui);
+	game.run();
+
+	delete board;
+	for (int i = 0; i < 2; i++)
+		delete players[i];
+	delete[] players;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------- Memory Tic-Tac-Toe Game ---------------------------------------------*/
+void run_Memory() {
+	UI<char>* game_ui = new Memory_UI();
+	Board<char>* board = new Memory_Board();
 	Player<char>** players = game_ui->setup_players();
 
 	GameManager<char> game(board, players, game_ui);
@@ -109,7 +130,8 @@ int main() {
 		cout << "3) 4x4 XO Tic-Tac-Toe\n";
 		cout << "4) Obstacles Tic-Tac-Toe\n";
 		cout << "5) Pyramid Tic-Tac-Toe\n";
-		cout << "6) Exit\n";
+		cout << "6) Memory Tic-Tac-Toe\n";
+		cout << "7) Exit\n";
 		cout << "\nEnter the Game Number to play: ";
 
 		int choice;
@@ -137,6 +159,9 @@ int main() {
 			run_Pyramid();
 			break;
 		case 6:
+			run_Memory();
+			break;
+		case 7:
 			cout << "\nGoodbye\nReturn to the Arena ASAP!!\n";
 			return 0;
 

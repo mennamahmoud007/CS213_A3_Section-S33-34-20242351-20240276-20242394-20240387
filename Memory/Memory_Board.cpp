@@ -32,9 +32,14 @@ bool Memory_Board::update_board(Move<char>* move)
     }
 
     realBoard[r][c] = sym;
-    board[r][c] = blank_symbol;
+    board[r][c] = '#';
     n_moves++;
     return true;
+}
+
+bool Memory_Board::is_win(Player<char>* player)
+{
+    return check_winner(player->get_symbol());
 }
 
 bool Memory_Board::is_draw(Player<char>* player)
