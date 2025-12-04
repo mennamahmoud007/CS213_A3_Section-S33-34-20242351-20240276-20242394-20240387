@@ -66,3 +66,13 @@ bool Misere_Board::is_draw(Player<char>*) {
 bool Misere_Board::game_is_over(Player<char>* p) {
     return is_lose(p) || is_draw(p);
 }
+
+void Misere_Board::apply_move(int r, int c, char sym) {
+    board[r][c] = sym;
+    n_moves++;
+}
+
+void Misere_Board::undo_move(int r, int c) {
+    board[r][c] = blank;
+    n_moves--;
+}
