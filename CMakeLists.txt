@@ -17,11 +17,13 @@ add_subdirectory(Obstacles)
 add_subdirectory(FiveByFive) 
 add_subdirectory(Infinity)
 add_subdirectory(SUS)
+add_subdirectory(WordGame)
+add_subdirectory(Ultimate)
+
 
 
 # MAIN MENU executable 
-add_executable(BoardGames Main.cpp)
-
+add_executable(BoardGames Main.cpp "WordGame /Word_Board.cpp" "WordGame /Word_Board.h" "WordGame /Word_Board_UI.cpp" "WordGame /Word_Board_UI.h"  "Ultimate /Ultimate_Board.cpp" "Ultimate /Ultimate_Board.h" "Ultimate /Ultimate_Board_UI.cpp" "Ultimate /Ultimate_Board_UI.h")
 # Link the libraries from games
-target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere XO4x4 Obstacles FiveByFive Infinity SUS)
+target_link_libraries(BoardGames PRIVATE XO Numerical9 Misere XO4x4 Obstacles FiveByFive Infinity SUS WordGame Ultimate)
 

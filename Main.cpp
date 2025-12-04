@@ -16,6 +16,12 @@
 #include "Infinity/Infinity_UI.h"
 #include "SUS/SUS_Board.h"
 #include "SUS/SUS_UI.h"
+#include "WordGame/Word_Board.h"
+#include "WordGame/Word_Board_UI.h"
+#include "Ultimate/Ultimate_Board.h"
+#include "Ultimate/Ultimate_Board_UI.h"
+
+
 using namespace std;
 
 /*------------------------------------------------------ XO Game --------------------------------------------------------------*/
@@ -190,6 +196,45 @@ void run_Infinity() {
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+
+/*----------------------------------------------------------- WordGame --------------------------------------------------------*/
+void run_WordGame() {
+
+	WordUI* word_ui = new WordUI();
+	WordBoard* word_board = new WordBoard();
+
+	word_ui->display_word_rules();
+
+	Player<char>** players = word_ui->setup_players();
+	GameManager<char> word_game(word_board, players, word_ui);
+	word_game.run();
+
+	delete word_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
+	delete word_ui;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------ Ultimate Tic-Tac-Toe --------------------------------------------------------------*/
+void run_Ultimate() {
+	UltimateBoard_UI* ultimate_ui = new UltimateBoard_UI();
+	UltimateBoard* ultimate_board = new UltimateBoard();
+	ultimate_ui->display_rules();
+	Player<char>** players = ultimate_ui->setup_players();
+	GameManager<char> ultimate_game(ultimate_board, players, ultimate_ui);
+	ultimate_game.run();
+	delete ultimate_board;
+	for (int i = 0; i < 2; ++i) {
+		delete players[i];
+	}
+	delete[] players;
+	delete ultimate_ui;
+}
+
 /*------------------------------------------------------Main Menu--------------------------------------------------------------*/
 
 	int main() {
@@ -206,6 +251,9 @@ void run_Infinity() {
 			cout << "6) Numerical Tic-Tac-Toe\n";
 			cout << "7) Obstacles Tic-Tac-Toe\n";
 			cout << "8) Infinity Tic-Tac-Toe\n";
+			cout << "11) Word Tic-Tac-Toe\n";
+			cout << "12) Ultimate Tic-Tac-Toe\n";
+			
 			cout << "9) Exit\n";
 			cout << "\nEnter the Game Number to play: ";
 			int choice;
@@ -219,6 +267,8 @@ void run_Infinity() {
 			case 6: run_Numerical9(); break;
 			case 7: run_Obstacles(); break;
 			case 8: run_Infinity(); break;
+			case 11: run_WordGame(); break;
+			case 12: run_Ultimate(); break;
 			case 9:
 				cout << "Goodbye\nReturn to the Arena ASAP!!\n";
 				return 0;
