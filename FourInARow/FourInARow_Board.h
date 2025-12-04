@@ -25,6 +25,7 @@ public:
     bool is_draw(Player<char>* player);
     bool game_is_over(Player<char>* player);
 
+    // Functions for AI
     int get_next_open_row(int col) const;
     bool is_column_full(int col) const;
     vector<int> get_valid_columns() const;

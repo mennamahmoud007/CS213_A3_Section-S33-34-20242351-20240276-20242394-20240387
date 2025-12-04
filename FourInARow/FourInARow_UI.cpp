@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 FourInARow_UI::FourInARow_UI() : UI<char>("Welcome to Four-in-a-Row!", 3) {}
 
 int FourInARow_UI::choose_best_column(FourInARow_Board* fb, char aiSym)
@@ -100,3 +101,6 @@ void FourInARow_UI::display_board_matrix(const vector<vector<char>>& matrix) {
 void FourInARow_UI::display_message(const string& message) {
     cout << message << endl;
 }
+
+
+
