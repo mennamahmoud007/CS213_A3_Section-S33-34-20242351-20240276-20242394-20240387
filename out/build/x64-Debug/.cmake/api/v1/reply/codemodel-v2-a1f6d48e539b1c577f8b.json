@@ -1,0 +1,288 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "XO",
+					"jsonFile" : "directory-XO-Debug-ae9250b5f79c9d57892f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "XO",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Numerical9",
+					"jsonFile" : "directory-Numerical9-Debug-8521259b86fde19b1955.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Numerical9",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "Misere",
+					"jsonFile" : "directory-Misere-Debug-a5da87836445e2ea1bd0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Misere",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "XO4x4",
+					"jsonFile" : "directory-XO4x4-Debug-0564b729610bfd9350dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "XO4x4",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "Obstacles",
+					"jsonFile" : "directory-Obstacles-Debug-8f5c9056c7859a633158.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Obstacles",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "FiveByFive",
+					"jsonFile" : "directory-FiveByFive-Debug-d72331efd9d44919140a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "FiveByFive",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Infinity",
+					"jsonFile" : "directory-Infinity-Debug-1738b4cc7043d250023b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Infinity",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "SUS",
+					"jsonFile" : "directory-SUS-Debug-d7cacfd5d8dd31def8f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "SUS",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "FourInARow",
+					"jsonFile" : "directory-FourInARow-Debug-b1023b418207a47620ed.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "FourInARow",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "BoardGamesProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BoardGames::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BoardGames-Debug-5512665d369bd820c846.json",
+					"name" : "BoardGames",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "FiveByFive::@f150965f2c51e5489e76",
+					"jsonFile" : "target-FiveByFive-Debug-b7ed4631499e29e1f1e2.json",
+					"name" : "FiveByFive",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "FourInARow::@49569aa259cc9cbd78b9",
+					"jsonFile" : "target-FourInARow-Debug-332d038e67ab48c2a6a5.json",
+					"name" : "FourInARow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "Infinity::@9d840d663fead505a113",
+					"jsonFile" : "target-Infinity-Debug-37aaf4c888fa9a21ef16.json",
+					"name" : "Infinity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Misere::@a0ce4d617d8159fa0694",
+					"jsonFile" : "target-Misere-Debug-a1c394b7e90c81828f0f.json",
+					"name" : "Misere",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Numerical9::@23716173899ac185d818",
+					"jsonFile" : "target-Numerical9-Debug-d54a932fca8d8a79d783.json",
+					"name" : "Numerical9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Obstacles::@0472700bf90b4810baa0",
+					"jsonFile" : "target-Obstacles-Debug-28c3e23268ef92ac4c6e.json",
+					"name" : "Obstacles",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "SUS::@dc621e0d27df9f9d680a",
+					"jsonFile" : "target-SUS-Debug-863673a7df5bcc1c78a2.json",
+					"name" : "SUS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "XO::@92003f51b55971609eba",
+					"jsonFile" : "target-XO-Debug-9442d0b48440e3337a40.json",
+					"name" : "XO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "XO4x4::@acd780fe3cb851aa917b",
+					"jsonFile" : "target-XO4x4-Debug-45046b3fb88828b13b4b.json",
+					"name" : "XO4x4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug",
+		"source" : "C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

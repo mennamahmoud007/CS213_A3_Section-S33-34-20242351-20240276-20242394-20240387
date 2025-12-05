@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Misere/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/XO4x4/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Obstacles/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/FiveByFive/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Infinity/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/SUS/cmake_install.cmake",
+		"C:/Users/iT/source/repos/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/FourInARow/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
