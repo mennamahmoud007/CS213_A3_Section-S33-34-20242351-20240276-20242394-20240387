@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rows_0',['rows',['../class_board.html#a948d978e3b5fc460559b588f5dee9572',1,'Board']]]
+  ['even_5fused_0',['even_used',['../class_numeric_board.html#afea545c54a911ebfa5408641bb4483cf',1,'NumericBoard']]]
 ];

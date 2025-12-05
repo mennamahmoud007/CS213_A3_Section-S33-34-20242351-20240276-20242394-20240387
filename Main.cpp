@@ -50,6 +50,7 @@ void run_XO() {
 void run_SUS() {
 	UI<char>* game_ui = new SUS_UI();
 	Board<char>* game_board = new SUS_Board();
+	static_cast<SUS_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> sus_game(game_board, players, game_ui);
 	sus_game.run();
@@ -87,6 +88,7 @@ void run_SUS() {
 void run_FourInARow() {
 	UI<char>* game_ui = new FourInARow_UI();
 	Board<char>* game_board = new FourInARow_Board();
+	static_cast<FourInARow_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> FourInARow_game(game_board, players, game_ui);
 	FourInARow_game.run();
@@ -103,6 +105,7 @@ void run_FourInARow() {
 void run_FiveByFive() {
 	UI<char>* game_ui = new FiveByFive_UI();
 	Board<char>* game_board = new FiveByFive_Board();
+	static_cast<FiveByFive_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> fivebyfive_game(game_board, players, game_ui);
 	fivebyfive_game.run();
@@ -141,6 +144,7 @@ void run_FiveByFive() {
 void run_Misere() {
 	UI<char>* game_ui = new Misere_UI();
 	Board<char>* game_board = new Misere_Board();
+	static_cast<Misere_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> Misere_game(game_board, players, game_ui);
 	Misere_game.run();
@@ -156,6 +160,7 @@ void run_Misere() {
 void run_Memory() {
 	UI<char>* game_ui = new Memory_UI();
 	Board<char>* game_board = new Memory_Board();
+	static_cast<Memory_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> Memory_game(game_board, players, game_ui);
 	Memory_game.run();
@@ -173,6 +178,7 @@ void run_Memory() {
 void run_XO4x4() {
 	UI<char>* game_ui = new XO4x4_UI();
 	Board<char>* board = new XO4x4_Board();
+	static_cast<XO4x4_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 
 	GameManager<char> game(board, players, game_ui);
@@ -190,6 +196,7 @@ void run_XO4x4() {
 void run_Numerical9() {
 	UI<int>* game_ui = new NumericalUI();
 	Board<int>* game_board = new NumericBoard();
+	static_cast<NumericalUI*>(game_ui)->display_rules();
 	Player<int>** players = game_ui->setup_players();
 	GameManager<int> numerical_game(game_board, players, game_ui);
 	numerical_game.run();
@@ -206,6 +213,7 @@ void run_Numerical9() {
 void run_Obstacles() {
 	UI<char>* game_ui = new ObstaclesUI();
 	Board<char>* board = new ObstaclesBoard();
+	static_cast<ObstaclesUI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 
 	GameManager<char> game(board, players, game_ui);
@@ -222,6 +230,7 @@ void run_Obstacles() {
 void run_Pyramid() {
 	UI<char>* game_ui = new PyramidUI();
 	Board<char>* board = new Pyramid_Board();
+	static_cast<PyramidUI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 
 	GameManager<char> game(board, players, game_ui);
@@ -238,6 +247,7 @@ void run_Pyramid() {
 void run_Infinity() {
 	UI<char>* game_ui = new Infinity_UI();
 	Board<char>* game_board = new Infinity_Board();
+	static_cast<Infinity_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> infinity_game(game_board, players, game_ui);
 	infinity_game.run();
@@ -252,6 +262,7 @@ void run_Infinity() {
 void run_Ultimate() {
 	UI<char>* game_ui = new Ultimate_UI();
 	Board<char>* game_board = new UltimateBoard();
+	static_cast<Ultimate_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> g(game_board, players, game_ui);
 	g.run();
@@ -264,10 +275,10 @@ void run_Ultimate() {
 
 /*----------------------------------------------- Diamond Tic-Tac-Toe Game ---------------------------------------------*/
 void run_Diamond() {
-	cout << "\nWelcome to Diamond Tic-Tac-Toe Game...\n";
 
 	UI<char>* game_ui = new Diamond_UI();
 	Board<char>* game_board = new Diamond_Board();
+	static_cast<Diamond_UI*>(game_ui)->display_rules();
 	Player<char>** players = game_ui->setup_players();
 	GameManager<char> diamond_game(game_board, players, game_ui);
 	diamond_game.run();
@@ -284,7 +295,7 @@ void run_WordGame() {
 	WordUI* word_ui = new WordUI();
 	WordBoard* word_board = new WordBoard();
 
-	word_ui->display_word_rules();
+	word_ui->display_rules();
 
 	Player<char>** players = word_ui->setup_players();
 	GameManager<char> word_game(word_board, players, word_ui);

@@ -1,0 +1,27 @@
+digraph "Misere_UI::choose_best_move"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Misere_UI::choose_best_move",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Chooses best move for AI."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Misere_Board::apply_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_misere___board.html#a801328a9ac6e550248c9d893c83c538a",tooltip="Places a symbol on the board."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Misere_Board::get_cell",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_misere___board.html#a9d166eb090451cdcd06677f22849773e",tooltip="Gets value of a cell."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Misere_UI::minimax",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_misere___u_i.html#a1d76f6aae74d5d0c3283cc668436b5f0",tooltip="Minimax algorithm (no depth limit)."];
+  Node4 -> Node2 [id="edge4_Node000004_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node5 [id="edge5_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Misere_UI::evaluate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_misere___u_i.html#a9021c1854515ca1a93b52b817bfd75f6",tooltip="Evaluates board for AI."];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Misere_Board::is_lose",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_misere___board.html#a186fb7b780c5d17db6919b352dcb3194",tooltip="Checks if player has lost (player forms 3-in-row)."];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Player::get_symbol",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4",tooltip="Get the player's symbol."];
+  Node4 -> Node3 [id="edge8_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node4 [id="edge9_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node8 [id="edge10_Node000004_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Misere_Board::undo_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_misere___board.html#a2eb7dae17657812a22e691f33923cc27",tooltip="Removes a symbol from the board."];
+  Node1 -> Node8 [id="edge11_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+}

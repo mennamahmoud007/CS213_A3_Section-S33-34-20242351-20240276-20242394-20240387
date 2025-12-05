@@ -1,6 +1,7 @@
 var class_player =
 [
     [ "Player", "class_player.html#adb4e803a7ac0356b111b8ca79d766976", null ],
+    [ "~Player", "class_player.html#aac1f2ab2a8e2aa0336d302c16068020e", null ],
     [ "get_board_ptr", "class_player.html#a508617eddfae8915d098102d480fc888", null ],
     [ "get_name", "class_player.html#aed2af19790ba73190e3ebeea589518e1", null ],
     [ "get_symbol", "class_player.html#af56f0bf98c0423a3a75b0848607d03a4", null ],

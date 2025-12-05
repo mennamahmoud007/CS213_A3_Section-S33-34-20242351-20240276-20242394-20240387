@@ -1,0 +1,14 @@
+digraph "WordBoard::is_win"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="WordBoard::is_win",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Check if the player created a valid 3-letter word on the board."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="WordBoard::game_is_over",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_word_board.html#a5cdb12ced7d2d722025672f0d61180e8",tooltip="Check if game ended by win or draw."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="WordBoard::is_draw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_word_board.html#ab844b239f10632d08d98835770bfe1f6",tooltip="Check if the board is full and no valid word was formed."];
+  Node3 -> Node2 [id="edge3_Node000003_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,8 +1,9 @@
 var class_u_i =
 [
     [ "UI", "class_u_i.html#ae50eed41905ca2f8dc103d9bef427fe6", null ],
-    [ "create_player", "class_u_i.html#a94561e0bb4bbcbe5ff71ca6d751922df", null ],
-    [ "display_board_matrix", "class_u_i.html#a5d4655d5ff273e284fd68b8547483a23", null ],
+    [ "~UI", "class_u_i.html#a1012e508ff7df030714c62ddf6b261a7", null ],
+    [ "create_player", "class_u_i.html#af9f043033208286cd56240a1f060dd7b", null ],
+    [ "display_board_matrix", "class_u_i.html#aa3775124efaeac59935ae0afb354708d", null ],
     [ "display_message", "class_u_i.html#a1eead148ee8726b8ea329c2cd8841d18", null ],
     [ "get_move", "class_u_i.html#a8befa259c38c57e6ae2e8ed81c476337", null ],
     [ "get_player_name", "class_u_i.html#a8617bbf64a9ddf11ea6231912044805d", null ],

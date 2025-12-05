@@ -1,0 +1,28 @@
+digraph "Diamond_UI::choose_best_move"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Diamond_UI::choose\l_best_move",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Determines the best move for AI."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Diamond_Board::apply_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_diamond___board.html#aa98f3f04c9d09aecd29e25c4fed72a4a",tooltip="Applies a move at row r and column c for the given symbol."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Diamond_Board::get\l_empty_cells",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_diamond___board.html#a99c072bd0d57e636292106f07ea40807",tooltip="Returns a vector of coordinates of empty cells."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Diamond_UI::minimax",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_diamond___u_i.html#ac359550b8d363a847fc1c663849d8494",tooltip="Minimax algorithm for AI decision making."];
+  Node4 -> Node2 [id="edge4_Node000004_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node5 [id="edge5_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Diamond_UI::evaluate\l_board",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_diamond___u_i.html#a938383ad65ab2f55aadd787acc886044",tooltip="Evaluates the board from AI perspective."];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Diamond_Board::is_win",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_diamond___board.html#a848ed84608cba8899865969ae5fa19f0",tooltip="Checks if the given player has won."];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Player::get_symbol",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4",tooltip="Get the player's symbol."];
+  Node4 -> Node3 [id="edge8_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node6 [id="edge9_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node4 [id="edge10_Node000004_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node8 [id="edge11_Node000004_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Diamond_Board::undo_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_diamond___board.html#add8653c13ff677a867abc324ef817a31",tooltip="Undoes a move at row r and column c."];
+  Node1 -> Node8 [id="edge12_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+}

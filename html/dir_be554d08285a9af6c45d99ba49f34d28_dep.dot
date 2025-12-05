@@ -1,0 +1,11 @@
+digraph "FiveByFive"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  dir_be554d08285a9af6c45d99ba49f34d28 [label="FiveByFive", fillcolor="#e2d0f8", color="grey25", style="filled,bold", URL="dir_be554d08285a9af6c45d99ba49f34d28.html",tooltip=""];
+  dir_bcbb2cf9a3d3d83e5515c82071a07177 [label="Framework", fillcolor="#e2d0f8", color="grey25", style="filled", URL="dir_bcbb2cf9a3d3d83e5515c82071a07177.html",tooltip=""];
+  dir_be554d08285a9af6c45d99ba49f34d28->dir_bcbb2cf9a3d3d83e5515c82071a07177 [headlabel="2", labeldistance=1.5 headhref="dir_000006_000008.html" href="dir_000006_000008.html" color="steelblue1" fontcolor="steelblue1"];
+}

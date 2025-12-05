@@ -1,17 +1,9 @@
 var searchData=
 [
-  ['game_5fis_5fover_0',['game_is_over',['../class_board.html#ae0e4575ec3cc4b6eb9f367ffb2beed13',1,'Board::game_is_over()'],['../class_x___o___board.html#aaee6e3efcbd685d9792d6d81356bba45',1,'X_O_Board::game_is_over()']]],
-  ['gamemanager_1',['GameManager',['../class_game_manager.html#addaf3682d9783bdc432a8e3273b5b92c',1,'GameManager']]],
-  ['get_5fboard_5fmatrix_2',['get_board_matrix',['../class_board.html#a117f2e61fdb7deccca333bbbc9c62d3a',1,'Board']]],
-  ['get_5fboard_5fptr_3',['get_board_ptr',['../class_player.html#a508617eddfae8915d098102d480fc888',1,'Player']]],
-  ['get_5fcolumns_4',['get_columns',['../class_board.html#ac665e1ed1f49125fab248e2c9ddfd608',1,'Board']]],
-  ['get_5fmove_5',['get_move',['../class_u_i.html#a8befa259c38c57e6ae2e8ed81c476337',1,'UI::get_move()'],['../class_x_o___u_i.html#a4814913b14a2666667a2a90ab8205356',1,'XO_UI::get_move()']]],
-  ['get_5fname_6',['get_name',['../class_player.html#aed2af19790ba73190e3ebeea589518e1',1,'Player']]],
-  ['get_5fplayer_5fname_7',['get_player_name',['../class_u_i.html#a8617bbf64a9ddf11ea6231912044805d',1,'UI']]],
-  ['get_5fplayer_5ftype_5fchoice_8',['get_player_type_choice',['../class_u_i.html#ae62d61367ea51a5d7532db3b830c6445',1,'UI']]],
-  ['get_5frows_9',['get_rows',['../class_board.html#a93b130eff67bd4476fab27be8341cb78',1,'Board']]],
-  ['get_5fsymbol_10',['get_symbol',['../class_move.html#a595bf740852c05a1cb425ef2640fd4ff',1,'Move::get_symbol()'],['../class_player.html#af56f0bf98c0423a3a75b0848607d03a4',1,'Player::get_symbol() const']]],
-  ['get_5ftype_11',['get_type',['../class_player.html#a2df3bd299bf7aecfa2275ec6902a60f8',1,'Player']]],
-  ['get_5fx_12',['get_x',['../class_move.html#a9d4f543a81e361f872d37bcfb64d5b55',1,'Move']]],
-  ['get_5fy_13',['get_y',['../class_move.html#a96469802a55c9083a1e93c7edec8a00c',1,'Move']]]
+  ['diamond_5fboard_0',['Diamond_Board',['../class_diamond___board.html#a46b141be4a62a22373d34ef04c9c536a',1,'Diamond_Board']]],
+  ['diamond_5fui_1',['Diamond_UI',['../class_diamond___u_i.html#ab324b9b8948308b1480ded25a7081e7a',1,'Diamond_UI']]],
+  ['display_5fboard_2',['display_board',['../class_diamond___board.html#a50b4487523b351808e14439fab4643c4',1,'Diamond_Board::display_board()'],['../class_five_by_five___board.html#a60d6a6a00175ae92a9ba4c618ab18c9d',1,'FiveByFive_Board::display_board()'],['../class_infinity___board.html#a2fa52933db215d59aeecf3464a0147d4',1,'Infinity_Board::display_board()'],['../class_ultimate_board.html#aea1a2944169b169d6f02e4b28207f43e',1,'UltimateBoard::display_board()']]],
+  ['display_5fboard_5fmatrix_3',['display_board_matrix',['../class_four_in_a_row___u_i.html#aaff1dac0f36c6c85094e4b45ad995b25',1,'FourInARow_UI::display_board_matrix()'],['../class_u_i.html#aa3775124efaeac59935ae0afb354708d',1,'UI::display_board_matrix()'],['../class_ultimate___u_i.html#aa2a2cd44426ab7d32244aa48a1463626',1,'Ultimate_UI::display_board_matrix()']]],
+  ['display_5fmessage_4',['display_message',['../class_four_in_a_row___u_i.html#a9c42978f78d94e12073a1bc806663ccb',1,'FourInARow_UI::display_message()'],['../class_u_i.html#a1eead148ee8726b8ea329c2cd8841d18',1,'UI::display_message()']]],
+  ['display_5frules_5',['display_rules',['../class_diamond___u_i.html#a8b2396d41b55caa0262267f1190fd091',1,'Diamond_UI::display_rules()'],['../class_five_by_five___u_i.html#aef7c760e1ccadfd6b345728cec276001',1,'FiveByFive_UI::display_rules()'],['../class_four_in_a_row___u_i.html#a438240c1c0e7fc1b5a3d514535dba1cb',1,'FourInARow_UI::display_rules()'],['../class_infinity___u_i.html#a2eb25986157426920ff055d8c00a3301',1,'Infinity_UI::display_rules()'],['../class_memory___u_i.html#a4615de49e260babd0f013a784b308011',1,'Memory_UI::display_rules()'],['../class_misere___u_i.html#ad0413733ef4c4228c484045ebeaf21d5',1,'Misere_UI::display_rules()'],['../class_numerical_u_i.html#aafbc8d91d7221743ebbcf586f219388c',1,'NumericalUI::display_rules()'],['../class_obstacles_u_i.html#afe9ad5d09723d908c8d39b8ff82094d0',1,'ObstaclesUI::display_rules()'],['../class_pyramid_u_i.html#a156499e683d98683ab0b574b3189b845',1,'PyramidUI::display_rules()'],['../class_s_u_s___u_i.html#a511b7ddac704dc86df2798f769d6b83b',1,'SUS_UI::display_rules()'],['../class_ultimate___u_i.html#a2678e775fa8728ed481e0a97fceaaf0d',1,'Ultimate_UI::display_rules()'],['../class_word_u_i.html#a37fd28e7801d4289217526d7dcde946a',1,'WordUI::display_rules()'],['../class_x_o4x4___u_i.html#a43dec095d98d9a2655667b3fb8a89a31',1,'XO4x4_UI::display_rules()']]]
 ];

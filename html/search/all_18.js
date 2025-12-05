@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['random_0',['RANDOM',['../_board_game___classes_8h.html#abe590f3c9109f404f003d5d7e4f0fccfa170e02e86972c2be8559884cc3c12254',1,'BoardGame_Classes.h']]],
+  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['realboard_2',['realBoard',['../class_memory___board.html#a7935be73daeef5212a57b32a796b7523',1,'Memory_Board']]],
+  ['remove_5foldest_3',['remove_oldest',['../class_infinity___board.html#a1236c8de9abe09644df325a7794dd0a6',1,'Infinity_Board']]],
+  ['repository_20structure_4',['📂 Repository Structure',['../md__r_e_a_d_m_e.html#autotoc_md31',1,'']]],
+  ['reset_5',['reset',['../class_sub_board.html#a9300d936ecc0a69cb303c6fe0044679e',1,'SubBoard']]],
+  ['row_6',['3. Four-in-a-Row',['../md__r_e_a_d_m_e.html#autotoc_md7',1,'']]],
+  ['rows_7',['rows',['../class_four_in_a_row___board.html#af0b3489d9d827a5bde4625e82ccc4b71',1,'FourInARow_Board::rows'],['../class_board.html#a948d978e3b5fc460559b588f5dee9572',1,'Board::rows']]],
+  ['run_8',['run',['../class_game_manager.html#a71f46d5189dac5c773f608cea1b5a203',1,'GameManager']]],
+  ['run_5fdiamond_9',['run_Diamond',['../_main_8cpp.html#a1d4e32aa86ea80e25347ef723ddf4f2e',1,'Main.cpp']]],
+  ['run_5ffivebyfive_10',['run_FiveByFive',['../_main_8cpp.html#a0639adeadceb51b345367ce75d7976db',1,'Main.cpp']]],
+  ['run_5ffourinarow_11',['run_FourInARow',['../_main_8cpp.html#aeeca19ac9b52022288bb9671f8cf312d',1,'Main.cpp']]],
+  ['run_5finfinity_12',['run_Infinity',['../_main_8cpp.html#ad575bc09d2d5986fff46193e9bd00406',1,'Main.cpp']]],
+  ['run_5fmemory_13',['run_Memory',['../_main_8cpp.html#ac78980d3cddd10363c2327e51083e360',1,'Main.cpp']]],
+  ['run_5fmisere_14',['run_Misere',['../_main_8cpp.html#a87642b87617e8b60618799aead563153',1,'Main.cpp']]],
+  ['run_5fnumerical9_15',['run_Numerical9',['../_main_8cpp.html#a9373511fcb17adcdb3078d976fe2ebab',1,'Main.cpp']]],
+  ['run_5fobstacles_16',['run_Obstacles',['../_main_8cpp.html#a910bde98d490d1f8fd1425af9292b510',1,'Main.cpp']]],
+  ['run_5fpyramid_17',['run_Pyramid',['../_main_8cpp.html#a1e2cf80164d7dc489cd4087c7d9eedde',1,'Main.cpp']]],
+  ['run_5fsus_18',['run_SUS',['../_main_8cpp.html#ae828e0b958cc5493bdfcffece9d17c80',1,'Main.cpp']]],
+  ['run_5fultimate_19',['run_Ultimate',['../_main_8cpp.html#adb336185728b31316454f16c15648755',1,'Main.cpp']]],
+  ['run_5fwordgame_20',['run_WordGame',['../_main_8cpp.html#a78b95cb73bd60640c6968b1f0d242f6c',1,'Main.cpp']]],
+  ['run_5fxo_21',['run_XO',['../_main_8cpp.html#ab1a339ffa15aa6dcd02e6a408c942208',1,'Main.cpp']]],
+  ['run_5fxo4x4_22',['run_XO4x4',['../_main_8cpp.html#a2870abd3299473314bf30d059a91840e',1,'Main.cpp']]]
+];

@@ -1,0 +1,17 @@
+digraph "UltimateBoard::game_is_over"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="UltimateBoard::game\l_is_over",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Check if the whole game is over."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="UltimateBoard::is_draw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_ultimate_board.html#ac65ab628046f3354d46c4fc2fca862fe",tooltip="Check if the game is a draw."];
+  Node2 -> Node1 [id="edge2_Node000002_Node000001",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node3 [id="edge3_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="UltimateBoard::is_win",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_ultimate_board.html#a8c07bad7f90bc8a51dd9689fd083dc6d",tooltip="Check if a player has won the entire Ultimate board."];
+  Node3 -> Node4 [id="edge4_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Player::get_symbol",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_player.html#af56f0bf98c0423a3a75b0848607d03a4",tooltip="Get the player's symbol."];
+  Node1 -> Node3 [id="edge5_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+}

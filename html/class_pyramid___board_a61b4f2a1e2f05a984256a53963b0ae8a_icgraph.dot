@@ -1,0 +1,11 @@
+digraph "Pyramid_Board::get_empty_cells"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Pyramid_Board::get\l_empty_cells",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Returns a list of all empty and available cells."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="PyramidUI::get_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_pyramid_u_i.html#aaf7bb6a3587283faff28b018d4d5068d",tooltip="Reads and returns a player's move."];
+}

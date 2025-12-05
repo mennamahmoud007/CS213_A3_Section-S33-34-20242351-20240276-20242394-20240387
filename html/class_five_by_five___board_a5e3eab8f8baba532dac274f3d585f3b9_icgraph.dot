@@ -1,0 +1,24 @@
+digraph "FiveByFive_Board::count_three_in_row"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="FiveByFive_Board::count\l_three_in_row",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Counts the number of 3-in-a-row sequences for a symbol."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="FiveByFive_Board::display\l_board",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_five_by_five___board.html#a60d6a6a00175ae92a9ba4c618ab18c9d",tooltip="Displays the board."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="FiveByFive_UI::evaluate\l_board",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_five_by_five___u_i.html#a91dcd0800adb65124a9706f37cb1f8f0",tooltip="Evaluates the board from AI perspective."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="FiveByFive_UI::minimax",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_five_by_five___u_i.html#a2b01dd373901903f97a3de09226e7c29",tooltip="Minimax algorithm for AI decision making."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="FiveByFive_UI::choose\l_best_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_five_by_five___u_i.html#a0f936059c84fd1ab55252373581945c8",tooltip="Determines the best move for AI."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="FiveByFive_UI::get_move",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_five_by_five___u_i.html#a45b8535b223da4686e18fa5b42d33c9b",tooltip="Prompts player for a move."];
+  Node4 -> Node4 [id="edge6_Node000004_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="run_FiveByFive",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_main_8cpp.html#a0639adeadceb51b345367ce75d7976db",tooltip=" "];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+}

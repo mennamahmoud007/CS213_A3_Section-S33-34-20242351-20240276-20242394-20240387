@@ -1,0 +1,11 @@
+digraph "FourInARow_Board::apply_move"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="FourInARow_Board::apply_move",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Drops a piece into a column for a given symbol."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="FourInARow_Board::get\l_next_open_row",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_four_in_a_row___board.html#a298c483bb1ce11a465dc2b08196758a8",tooltip="Finds the next available row in a column."];
+}

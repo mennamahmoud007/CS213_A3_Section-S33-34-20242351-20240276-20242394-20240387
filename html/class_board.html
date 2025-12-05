@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Board&lt; T &gt; Class Template Reference</title>
+<title>Tic-Tac-Toe Variations Project: Board&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ticresize.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Tic-Tac-Toe Variations Project
    </div>
+   <div id="projectbrief">CS213 Assignment 3</div>
   </td>
  </tr>
  </tbody>
@@ -95,16 +97,14 @@ $(function(){initNavTree('class_board.html','','class_board-members'); });
 <p>Base template for any board used in board games.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_board_game___classes_8h_source.html">BoardGame_Classes.h</a>&gt;</code></p>
+<p><code>#include &lt;BoardGame_Classes.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae5dfded241ee3644196e2f6074d1d0b1" id="r_ae5dfded241ee3644196e2f6074d1d0b1"><td class="memItemLeft" align="right" valign="top"><a id="ae5dfded241ee3644196e2f6074d1d0b1" name="ae5dfded241ee3644196e2f6074d1d0b1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Board</b> (int <a class="el" href="#a948d978e3b5fc460559b588f5dee9572">rows</a>, int <a class="el" href="#afaf8842d9d52ac724e8c2f5642ecafc7">columns</a>)</td></tr>
-<tr class="memdesc:ae5dfded241ee3644196e2f6074d1d0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a board with given dimensions. <br /></td></tr>
-<tr class="memitem:a138a6378af669dd1ce55dc11217aea48" id="r_a138a6378af669dd1ce55dc11217aea48"><td class="memItemLeft" align="right" valign="top"><a id="a138a6378af669dd1ce55dc11217aea48" name="a138a6378af669dd1ce55dc11217aea48"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Board</b> ()</td></tr>
-<tr class="memdesc:a138a6378af669dd1ce55dc11217aea48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. Frees allocated board memory. <br /></td></tr>
+<tr class="memitem:ae5dfded241ee3644196e2f6074d1d0b1" id="r_ae5dfded241ee3644196e2f6074d1d0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5dfded241ee3644196e2f6074d1d0b1">Board</a> (int <a class="el" href="#a948d978e3b5fc460559b588f5dee9572">rows</a>, int <a class="el" href="#afaf8842d9d52ac724e8c2f5642ecafc7">columns</a>)</td></tr>
+<tr class="memdesc:ae5dfded241ee3644196e2f6074d1d0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a board with given dimensions.  <br /></td></tr>
+<tr class="memitem:a138a6378af669dd1ce55dc11217aea48" id="r_a138a6378af669dd1ce55dc11217aea48"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a138a6378af669dd1ce55dc11217aea48">~Board</a> ()</td></tr>
+<tr class="memdesc:a138a6378af669dd1ce55dc11217aea48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. Frees allocated board memory.  <br /></td></tr>
 <tr class="memitem:a93d9dec601dda58b7e206ccb47633e57" id="r_a93d9dec601dda58b7e206ccb47633e57"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93d9dec601dda58b7e206ccb47633e57">update_board</a> (<a class="el" href="class_move.html">Move</a>&lt; T &gt; *move)=0</td></tr>
 <tr class="memdesc:a93d9dec601dda58b7e206ccb47633e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the board with a new move.  <br /></td></tr>
 <tr class="memitem:ab316fe3e79677b4617fc3d90d6c48f33" id="r_ab316fe3e79677b4617fc3d90d6c48f33"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab316fe3e79677b4617fc3d90d6c48f33">is_win</a> (<a class="el" href="class_player.html">Player</a>&lt; T &gt; *)=0</td></tr>
@@ -115,30 +115,23 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Board</b> ()</td>
 <tr class="memdesc:a8dbe2a243881986f3e53b45799d377fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game ended in a draw.  <br /></td></tr>
 <tr class="memitem:ae0e4575ec3cc4b6eb9f367ffb2beed13" id="r_ae0e4575ec3cc4b6eb9f367ffb2beed13"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e4575ec3cc4b6eb9f367ffb2beed13">game_is_over</a> (<a class="el" href="class_player.html">Player</a>&lt; T &gt; *)=0</td></tr>
 <tr class="memdesc:ae0e4575ec3cc4b6eb9f367ffb2beed13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is over.  <br /></td></tr>
-<tr class="memitem:a117f2e61fdb7deccca333bbbc9c62d3a" id="r_a117f2e61fdb7deccca333bbbc9c62d3a"><td class="memItemLeft" align="right" valign="top"><a id="a117f2e61fdb7deccca333bbbc9c62d3a" name="a117f2e61fdb7deccca333bbbc9c62d3a"></a>
-vector&lt; vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_board_matrix</b> () const</td></tr>
-<tr class="memdesc:a117f2e61fdb7deccca333bbbc9c62d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a copy of the current board as a 2D vector. <br /></td></tr>
-<tr class="memitem:a93b130eff67bd4476fab27be8341cb78" id="r_a93b130eff67bd4476fab27be8341cb78"><td class="memItemLeft" align="right" valign="top"><a id="a93b130eff67bd4476fab27be8341cb78" name="a93b130eff67bd4476fab27be8341cb78"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_rows</b> () const</td></tr>
-<tr class="memdesc:a93b130eff67bd4476fab27be8341cb78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of rows. <br /></td></tr>
-<tr class="memitem:ac665e1ed1f49125fab248e2c9ddfd608" id="r_ac665e1ed1f49125fab248e2c9ddfd608"><td class="memItemLeft" align="right" valign="top"><a id="ac665e1ed1f49125fab248e2c9ddfd608" name="ac665e1ed1f49125fab248e2c9ddfd608"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_columns</b> () const</td></tr>
-<tr class="memdesc:ac665e1ed1f49125fab248e2c9ddfd608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of columns. <br /></td></tr>
+<tr class="memitem:a117f2e61fdb7deccca333bbbc9c62d3a" id="r_a117f2e61fdb7deccca333bbbc9c62d3a"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a117f2e61fdb7deccca333bbbc9c62d3a">get_board_matrix</a> () const</td></tr>
+<tr class="memdesc:a117f2e61fdb7deccca333bbbc9c62d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a copy of the current board as a 2D vector.  <br /></td></tr>
+<tr class="memitem:a93b130eff67bd4476fab27be8341cb78" id="r_a93b130eff67bd4476fab27be8341cb78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93b130eff67bd4476fab27be8341cb78">get_rows</a> () const</td></tr>
+<tr class="memdesc:a93b130eff67bd4476fab27be8341cb78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of rows.  <br /></td></tr>
+<tr class="memitem:ac665e1ed1f49125fab248e2c9ddfd608" id="r_ac665e1ed1f49125fab248e2c9ddfd608"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac665e1ed1f49125fab248e2c9ddfd608">get_columns</a> () const</td></tr>
+<tr class="memdesc:ac665e1ed1f49125fab248e2c9ddfd608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of columns.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a948d978e3b5fc460559b588f5dee9572" id="r_a948d978e3b5fc460559b588f5dee9572"><td class="memItemLeft" align="right" valign="top"><a id="a948d978e3b5fc460559b588f5dee9572" name="a948d978e3b5fc460559b588f5dee9572"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>rows</b></td></tr>
-<tr class="memdesc:a948d978e3b5fc460559b588f5dee9572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of rows. <br /></td></tr>
-<tr class="memitem:afaf8842d9d52ac724e8c2f5642ecafc7" id="r_afaf8842d9d52ac724e8c2f5642ecafc7"><td class="memItemLeft" align="right" valign="top"><a id="afaf8842d9d52ac724e8c2f5642ecafc7" name="afaf8842d9d52ac724e8c2f5642ecafc7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>columns</b></td></tr>
-<tr class="memdesc:afaf8842d9d52ac724e8c2f5642ecafc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of columns. <br /></td></tr>
-<tr class="memitem:af00c1fc363eb640ca276b8a572040040" id="r_af00c1fc363eb640ca276b8a572040040"><td class="memItemLeft" align="right" valign="top"><a id="af00c1fc363eb640ca276b8a572040040" name="af00c1fc363eb640ca276b8a572040040"></a>
-vector&lt; vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>board</b></td></tr>
-<tr class="memdesc:af00c1fc363eb640ca276b8a572040040"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D vector for the board <br /></td></tr>
-<tr class="memitem:a5952baefabced65fecec333de638408d" id="r_a5952baefabced65fecec333de638408d"><td class="memItemLeft" align="right" valign="top"><a id="a5952baefabced65fecec333de638408d" name="a5952baefabced65fecec333de638408d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>n_moves</b> = 0</td></tr>
-<tr class="memdesc:a5952baefabced65fecec333de638408d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of moves made. <br /></td></tr>
+<tr class="memitem:a948d978e3b5fc460559b588f5dee9572" id="r_a948d978e3b5fc460559b588f5dee9572"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a948d978e3b5fc460559b588f5dee9572">rows</a></td></tr>
+<tr class="memdesc:a948d978e3b5fc460559b588f5dee9572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of rows.  <br /></td></tr>
+<tr class="memitem:afaf8842d9d52ac724e8c2f5642ecafc7" id="r_afaf8842d9d52ac724e8c2f5642ecafc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaf8842d9d52ac724e8c2f5642ecafc7">columns</a></td></tr>
+<tr class="memdesc:afaf8842d9d52ac724e8c2f5642ecafc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of columns.  <br /></td></tr>
+<tr class="memitem:af00c1fc363eb640ca276b8a572040040" id="r_af00c1fc363eb640ca276b8a572040040"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af00c1fc363eb640ca276b8a572040040">board</a></td></tr>
+<tr class="memdesc:af00c1fc363eb640ca276b8a572040040"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D vector for the board  <br /></td></tr>
+<tr class="memitem:a5952baefabced65fecec333de638408d" id="r_a5952baefabced65fecec333de638408d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5952baefabced65fecec333de638408d">n_moves</a> = 0</td></tr>
+<tr class="memdesc:a5952baefabced65fecec333de638408d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of moves made.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
@@ -150,7 +143,70 @@ class Board&lt; T &gt;</div><p>Base template for any board used in board games. 
   </dd>
 </dl>
 <p>Provides core data (rows, columns, matrix) and virtual methods to be implemented by specific games like Tic-Tac-Toe, Connect4, etc. </p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae5dfded241ee3644196e2f6074d1d0b1" name="ae5dfded241ee3644196e2f6074d1d0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5dfded241ee3644196e2f6074d1d0b1">&#9670;&#160;</a></span>Board()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_board.html">Board</a>&lt; T &gt;::Board </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>rows</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>columns</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a board with given dimensions. </p>
+
+</div>
+</div>
+<a id="a138a6378af669dd1ce55dc11217aea48" name="a138a6378af669dd1ce55dc11217aea48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138a6378af669dd1ce55dc11217aea48">&#9670;&#160;</a></span>~Board()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_board.html">Board</a>&lt; T &gt;::~<a class="el" href="class_board.html">Board</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor. Frees allocated board memory. </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ae0e4575ec3cc4b6eb9f367ffb2beed13" name="ae0e4575ec3cc4b6eb9f367ffb2beed13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0e4575ec3cc4b6eb9f367ffb2beed13">&#9670;&#160;</a></span>game_is_over()</h2>
 
@@ -178,7 +234,94 @@ template&lt;typename T&gt; </div>
 
 <p>Check if the game is over. </p>
 
-<p>Implemented in <a class="el" href="class_x___o___board.html#aaee6e3efcbd685d9792d6d81356bba45">X_O_Board</a>.</p>
+<p>Implemented in <a class="el" href="class_diamond___board.html#a32a49c7b0dd091616f52e1ea9152d8ac">Diamond_Board</a>, <a class="el" href="class_five_by_five___board.html#ac0889699d6403fb18e84e3c91f6c347e">FiveByFive_Board</a>, <a class="el" href="class_four_in_a_row___board.html#a445a286b0ea571266550f656b67d8a46">FourInARow_Board</a>, <a class="el" href="class_infinity___board.html#a269b17b6ede5bd97bcf60a28e04a83d3">Infinity_Board</a>, <a class="el" href="class_memory___board.html#ad806fdf49150705c3f4892e74e8dedc4">Memory_Board</a>, <a class="el" href="class_misere___board.html#afcca94e613d7d43fac5f6fe841d1d760">Misere_Board</a>, <a class="el" href="class_numeric_board.html#a175fb19c9f26670d437c3e595746dd8b">NumericBoard</a>, <a class="el" href="class_obstacles_board.html#ad3767d7e773b72ea34edd31f576a1b59">ObstaclesBoard</a>, <a class="el" href="class_pyramid___board.html#a6fd415a77b05245f2dd4a83e0b7a63c7">Pyramid_Board</a>, <a class="el" href="class_sub_board.html#a178547d485b9b9f80debf26180209467">SubBoard</a>, <a class="el" href="class_s_u_s___board.html#acd2c39612239065da3aea67ac7c27aa4">SUS_Board</a>, <a class="el" href="class_ultimate_board.html#ab0501d5075b6bf7f99a7e4f3cf752da9">UltimateBoard</a>, <a class="el" href="class_word_board.html#a5cdb12ced7d2d722025672f0d61180e8">WordBoard</a>, <a class="el" href="class_x___o___board.html#aaee6e3efcbd685d9792d6d81356bba45">X_O_Board</a>, and <a class="el" href="class_x_o4x4___board.html#a9fc23ce172a32a67793897b52005f76b">XO4x4_Board</a>.</p>
+
+</div>
+</div>
+<a id="a117f2e61fdb7deccca333bbbc9c62d3a" name="a117f2e61fdb7deccca333bbbc9c62d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117f2e61fdb7deccca333bbbc9c62d3a">&#9670;&#160;</a></span>get_board_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt; T &gt; &gt; <a class="el" href="class_board.html">Board</a>&lt; T &gt;::get_board_matrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a copy of the current board as a 2D vector. </p>
+
+</div>
+</div>
+<a id="ac665e1ed1f49125fab248e2c9ddfd608" name="ac665e1ed1f49125fab248e2c9ddfd608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac665e1ed1f49125fab248e2c9ddfd608">&#9670;&#160;</a></span>get_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_board.html">Board</a>&lt; T &gt;::get_columns </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get number of columns. </p>
+
+</div>
+</div>
+<a id="a93b130eff67bd4476fab27be8341cb78" name="a93b130eff67bd4476fab27be8341cb78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b130eff67bd4476fab27be8341cb78">&#9670;&#160;</a></span>get_rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_board.html">Board</a>&lt; T &gt;::get_rows </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get number of rows. </p>
 
 </div>
 </div>
@@ -209,7 +352,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check if the game ended in a draw. </p>
 
-<p>Implemented in <a class="el" href="class_x___o___board.html#a2be5f37643e21edbdea2361853a6e953">X_O_Board</a>.</p>
+<p>Implemented in <a class="el" href="class_diamond___board.html#a964fbcdbc87851ccadfb179367e00567">Diamond_Board</a>, <a class="el" href="class_five_by_five___board.html#a0f1747ab7efedce23295d04327e8bca3">FiveByFive_Board</a>, <a class="el" href="class_four_in_a_row___board.html#a487530515c3eaba637a19ddd2488f0c6">FourInARow_Board</a>, <a class="el" href="class_infinity___board.html#ab0ea3f487553c34a33af3e99550b264e">Infinity_Board</a>, <a class="el" href="class_memory___board.html#ad80149de055f8902191f1124d23619df">Memory_Board</a>, <a class="el" href="class_misere___board.html#aab74b353342b36b268bd2c46f5c788f9">Misere_Board</a>, <a class="el" href="class_numeric_board.html#a2dc34622a94f6b57ab57fa0e1d4947db">NumericBoard</a>, <a class="el" href="class_obstacles_board.html#a2a87765e491e999f21b1c649dc9c3f38">ObstaclesBoard</a>, <a class="el" href="class_pyramid___board.html#ab6c2f67e008f4e5ed164e77522462ab2">Pyramid_Board</a>, <a class="el" href="class_sub_board.html#af6794159701cf302b7d4faccd218b351">SubBoard</a>, <a class="el" href="class_s_u_s___board.html#aeb2ad5ce9bdd10ecf2d3cf06be14e6ca">SUS_Board</a>, <a class="el" href="class_ultimate_board.html#ac65ab628046f3354d46c4fc2fca862fe">UltimateBoard</a>, <a class="el" href="class_word_board.html#ab844b239f10632d08d98835770bfe1f6">WordBoard</a>, <a class="el" href="class_x___o___board.html#a2be5f37643e21edbdea2361853a6e953">X_O_Board</a>, and <a class="el" href="class_x_o4x4___board.html#a26579ff4d3c26779092138c78c0191bb">XO4x4_Board</a>.</p>
 
 </div>
 </div>
@@ -240,7 +383,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check if a player has lost. </p>
 
-<p>Implemented in <a class="el" href="class_x___o___board.html#aec0358cc4f109084267b953832478e94">X_O_Board</a>.</p>
+<p>Implemented in <a class="el" href="class_diamond___board.html#a5e77545a65d94c90e7655c483e0bc278">Diamond_Board</a>, <a class="el" href="class_five_by_five___board.html#ae19cc701ef1cd16a25029b86b1e1716e">FiveByFive_Board</a>, <a class="el" href="class_four_in_a_row___board.html#a1105e0a5de057c8a702ed357f9f06211">FourInARow_Board</a>, <a class="el" href="class_infinity___board.html#a8fd0b622495f2ccf2eed22ea0f8b1205">Infinity_Board</a>, <a class="el" href="class_memory___board.html#a0c40062fe9f07b532ad893747d5d47e5">Memory_Board</a>, <a class="el" href="class_misere___board.html#a186fb7b780c5d17db6919b352dcb3194">Misere_Board</a>, <a class="el" href="class_numeric_board.html#a0daafa280635463bfacf70b839516901">NumericBoard</a>, <a class="el" href="class_obstacles_board.html#abb2b7dd380024fc8b1e7129ce0aed499">ObstaclesBoard</a>, <a class="el" href="class_pyramid___board.html#a4a699d21c8368a0d76275289b6e65555">Pyramid_Board</a>, <a class="el" href="class_sub_board.html#a1af859550ce23cc3660d7e8faecbb2a1">SubBoard</a>, <a class="el" href="class_s_u_s___board.html#a3761b3ce05e2194ff95893b494a3c933">SUS_Board</a>, <a class="el" href="class_ultimate_board.html#a2a3be750404b6d3a4e3305d53882b216">UltimateBoard</a>, <a class="el" href="class_word_board.html#ac55662a32e9189f1b9b342424fe7bf08">WordBoard</a>, <a class="el" href="class_x___o___board.html#aec0358cc4f109084267b953832478e94">X_O_Board</a>, and <a class="el" href="class_x_o4x4___board.html#ae4c57ac29467cd958dffc0db73d8267e">XO4x4_Board</a>.</p>
 
 </div>
 </div>
@@ -271,7 +414,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check if a player has won. </p>
 
-<p>Implemented in <a class="el" href="class_x___o___board.html#aafb56a8db5bf8352157326a52c06e2e6">X_O_Board</a>.</p>
+<p>Implemented in <a class="el" href="class_diamond___board.html#a848ed84608cba8899865969ae5fa19f0">Diamond_Board</a>, <a class="el" href="class_five_by_five___board.html#a32a6629dadbeda65748d541ab1ddb335">FiveByFive_Board</a>, <a class="el" href="class_four_in_a_row___board.html#ac3507be7191baf427c493af2c6da81c3">FourInARow_Board</a>, <a class="el" href="class_infinity___board.html#a0d93549c5b8a55ce0e02f1b2514d6649">Infinity_Board</a>, <a class="el" href="class_memory___board.html#a8ebd3f4825d7a3ac78cc77ef85738de9">Memory_Board</a>, <a class="el" href="class_misere___board.html#aea6c6a5249f718caa00e52219dd90b14">Misere_Board</a>, <a class="el" href="class_numeric_board.html#ad41885ed772a7e3aa2a54964e1c72cd1">NumericBoard</a>, <a class="el" href="class_obstacles_board.html#ab90a383ef6b81255ac614635cb2cd52b">ObstaclesBoard</a>, <a class="el" href="class_pyramid___board.html#a4103a6900643ea2051088853ad887b0f">Pyramid_Board</a>, <a class="el" href="class_sub_board.html#a86732ad6215165b25115057e7eea169e">SubBoard</a>, <a class="el" href="class_s_u_s___board.html#a2230a0e70a119a14e7e7380ba9b2cb90">SUS_Board</a>, <a class="el" href="class_ultimate_board.html#a8c07bad7f90bc8a51dd9689fd083dc6d">UltimateBoard</a>, <a class="el" href="class_word_board.html#aba2c1fea7e60ca00cb15b8933ce32d36">WordBoard</a>, <a class="el" href="class_x___o___board.html#aafb56a8db5bf8352157326a52c06e2e6">X_O_Board</a>, and <a class="el" href="class_x_o4x4___board.html#aa83e3480047dc05affb8a821bdd81b79">XO4x4_Board</a>.</p>
 
 </div>
 </div>
@@ -309,12 +452,117 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the move is valid and applied, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_x___o___board.html#aef2b0da670b2d5dc6333e0e0113f8b3d">X_O_Board</a>.</p>
+<p>Implemented in <a class="el" href="class_diamond___board.html#ace093fe213c029551400df9cc4d53196">Diamond_Board</a>, <a class="el" href="class_five_by_five___board.html#aad484568d9828dd29ac172fe9b708a5c">FiveByFive_Board</a>, <a class="el" href="class_four_in_a_row___board.html#a13a520844965656953fb0776b5295283">FourInARow_Board</a>, <a class="el" href="class_infinity___board.html#a73168748decfd8a3bfa9044409d728aa">Infinity_Board</a>, <a class="el" href="class_memory___board.html#ab21d9e1025f3a8ae29dd17a5fb368462">Memory_Board</a>, <a class="el" href="class_misere___board.html#a32c93d676416311b19754f60b1468450">Misere_Board</a>, <a class="el" href="class_numeric_board.html#a43a8743ada765d7d8dd4c67149823f43">NumericBoard</a>, <a class="el" href="class_obstacles_board.html#af4ad3986fb61c2fe3df6e226a396c83e">ObstaclesBoard</a>, <a class="el" href="class_pyramid___board.html#aa0ad0f91ee884d0a497e233ce4f68c65">Pyramid_Board</a>, <a class="el" href="class_sub_board.html#aafdd4e7547850dfae76b714de6dd88f7">SubBoard</a>, <a class="el" href="class_s_u_s___board.html#a22679cdc9a91a17fea898c66ad821e45">SUS_Board</a>, <a class="el" href="class_ultimate_board.html#afba377a36f321db178041e6ab2655952">UltimateBoard</a>, <a class="el" href="class_word_board.html#a7886e37e01d21bd9a90115e556974559">WordBoard</a>, <a class="el" href="class_x___o___board.html#aef2b0da670b2d5dc6333e0e0113f8b3d">X_O_Board</a>, and <a class="el" href="class_x_o4x4___board.html#a21f7dcf6fe32f2b79800628fe9137b32">XO4x4_Board</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="af00c1fc363eb640ca276b8a572040040" name="af00c1fc363eb640ca276b8a572040040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00c1fc363eb640ca276b8a572040040">&#9670;&#160;</a></span>board</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;vector&lt;T&gt; &gt; <a class="el" href="class_board.html">Board</a>&lt; T &gt;::board</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2D vector for the board </p>
+
+</div>
+</div>
+<a id="afaf8842d9d52ac724e8c2f5642ecafc7" name="afaf8842d9d52ac724e8c2f5642ecafc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf8842d9d52ac724e8c2f5642ecafc7">&#9670;&#160;</a></span>columns</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_board.html">Board</a>&lt; T &gt;::columns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of columns. </p>
+
+</div>
+</div>
+<a id="a5952baefabced65fecec333de638408d" name="a5952baefabced65fecec333de638408d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5952baefabced65fecec333de638408d">&#9670;&#160;</a></span>n_moves</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_board.html">Board</a>&lt; T &gt;::n_moves = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of moves made. </p>
+
+</div>
+</div>
+<a id="a948d978e3b5fc460559b588f5dee9572" name="a948d978e3b5fc460559b588f5dee9572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948d978e3b5fc460559b588f5dee9572">&#9670;&#160;</a></span>rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_board.html">Board</a>&lt; T &gt;::rows</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of rows. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_board_game___classes_8h_source.html">BoardGame_Classes.h</a></li>
+<li>Framework/<a class="el" href="_board_game___classes_8h.html">BoardGame_Classes.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

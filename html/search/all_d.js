@@ -1,5 +1,19 @@
 var searchData=
 [
-  ['_7eboard_0',['~Board',['../class_board.html#a138a6378af669dd1ce55dc11217aea48',1,'Board']]],
-  ['_7exo_5fui_1',['~XO_UI',['../class_x_o___u_i.html#a6c58a77a2fa80f73e7076ca4a94fcc8a',1,'XO_UI']]]
+  ['dc_0',['dc',['../_diamond___board_8cpp.html#ad428a1efdfe4404e23a9d74a08d81fab',1,'Diamond_Board.cpp']]],
+  ['dec_1',['DEC',['../_c_make_c_compiler_id_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC:&#160;CMakeCXXCompilerId.cpp']]],
+  ['descriptions_2',['📌 List of Implemented Games &amp;amp; Descriptions',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]],
+  ['diamond_20tic_20tac_20toe_3',['7. Diamond Tic-Tac-Toe',['../md__r_e_a_d_m_e.html#autotoc_md15',1,'']]],
+  ['diamond_5fboard_4',['Diamond_Board',['../class_diamond___board.html',1,'Diamond_Board'],['../class_diamond___board.html#a46b141be4a62a22373d34ef04c9c536a',1,'Diamond_Board::Diamond_Board()']]],
+  ['diamond_5fboard_2ecpp_5',['Diamond_Board.cpp',['../_diamond___board_8cpp.html',1,'']]],
+  ['diamond_5fboard_2eh_6',['Diamond_Board.h',['../_diamond___board_8h.html',1,'']]],
+  ['diamond_5fui_7',['Diamond_UI',['../class_diamond___u_i.html',1,'Diamond_UI'],['../class_diamond___u_i.html#ab324b9b8948308b1480ded25a7081e7a',1,'Diamond_UI::Diamond_UI()']]],
+  ['diamond_5fui_2ecpp_8',['Diamond_UI.cpp',['../_diamond___u_i_8cpp.html',1,'']]],
+  ['diamond_5fui_2eh_9',['Diamond_UI.h',['../_diamond___u_i_8h.html',1,'']]],
+  ['dictionary_10',['dictionary',['../class_word_board.html#a4c33034dd1ccca28901c62b34d9ad797',1,'WordBoard']]],
+  ['display_5fboard_11',['display_board',['../class_diamond___board.html#a50b4487523b351808e14439fab4643c4',1,'Diamond_Board::display_board()'],['../class_five_by_five___board.html#a60d6a6a00175ae92a9ba4c618ab18c9d',1,'FiveByFive_Board::display_board()'],['../class_infinity___board.html#a2fa52933db215d59aeecf3464a0147d4',1,'Infinity_Board::display_board()'],['../class_ultimate_board.html#aea1a2944169b169d6f02e4b28207f43e',1,'UltimateBoard::display_board()']]],
+  ['display_5fboard_5fmatrix_12',['display_board_matrix',['../class_four_in_a_row___u_i.html#aaff1dac0f36c6c85094e4b45ad995b25',1,'FourInARow_UI::display_board_matrix()'],['../class_u_i.html#aa3775124efaeac59935ae0afb354708d',1,'UI::display_board_matrix()'],['../class_ultimate___u_i.html#aa2a2cd44426ab7d32244aa48a1463626',1,'Ultimate_UI::display_board_matrix()']]],
+  ['display_5fmessage_13',['display_message',['../class_four_in_a_row___u_i.html#a9c42978f78d94e12073a1bc806663ccb',1,'FourInARow_UI::display_message()'],['../class_u_i.html#a1eead148ee8726b8ea329c2cd8841d18',1,'UI::display_message()']]],
+  ['display_5frules_14',['display_rules',['../class_diamond___u_i.html#a8b2396d41b55caa0262267f1190fd091',1,'Diamond_UI::display_rules()'],['../class_five_by_five___u_i.html#aef7c760e1ccadfd6b345728cec276001',1,'FiveByFive_UI::display_rules()'],['../class_four_in_a_row___u_i.html#a438240c1c0e7fc1b5a3d514535dba1cb',1,'FourInARow_UI::display_rules()'],['../class_infinity___u_i.html#a2eb25986157426920ff055d8c00a3301',1,'Infinity_UI::display_rules()'],['../class_memory___u_i.html#a4615de49e260babd0f013a784b308011',1,'Memory_UI::display_rules()'],['../class_misere___u_i.html#ad0413733ef4c4228c484045ebeaf21d5',1,'Misere_UI::display_rules()'],['../class_numerical_u_i.html#aafbc8d91d7221743ebbcf586f219388c',1,'NumericalUI::display_rules()'],['../class_obstacles_u_i.html#afe9ad5d09723d908c8d39b8ff82094d0',1,'ObstaclesUI::display_rules()'],['../class_pyramid_u_i.html#a156499e683d98683ab0b574b3189b845',1,'PyramidUI::display_rules()'],['../class_s_u_s___u_i.html#a511b7ddac704dc86df2798f769d6b83b',1,'SUS_UI::display_rules()'],['../class_ultimate___u_i.html#a2678e775fa8728ed481e0a97fceaaf0d',1,'Ultimate_UI::display_rules()'],['../class_word_u_i.html#a37fd28e7801d4289217526d7dcde946a',1,'WordUI::display_rules()'],['../class_x_o4x4___u_i.html#a43dec095d98d9a2655667b3fb8a89a31',1,'XO4x4_UI::display_rules()']]],
+  ['dr_15',['dr',['../_diamond___board_8cpp.html#a35becc1d27579bd932880438acda2dac',1,'Diamond_Board.cpp']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7eboard_0',['~Board',['../class_board.html#a138a6378af669dd1ce55dc11217aea48',1,'Board']]],
-  ['_7exo_5fui_1',['~XO_UI',['../class_x_o___u_i.html#a6c58a77a2fa80f73e7076ca4a94fcc8a',1,'XO_UI']]]
+  ['obstaclesboard_0',['ObstaclesBoard',['../class_obstacles_board.html#a65f81b800ebde45a015fb3e4f7432f29',1,'ObstaclesBoard']]],
+  ['obstaclesui_1',['ObstaclesUI',['../class_obstacles_u_i.html#ad646ac408f23f068b93d5b1c9202cbbc',1,'ObstaclesUI']]]
 ];

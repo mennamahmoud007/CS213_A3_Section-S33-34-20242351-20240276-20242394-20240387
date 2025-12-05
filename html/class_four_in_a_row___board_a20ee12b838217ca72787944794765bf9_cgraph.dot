@@ -1,0 +1,11 @@
+digraph "FourInARow_Board::get_valid_columns"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="FourInARow_Board::get\l_valid_columns",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Returns list of columns that still accept moves."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="FourInARow_Board::is\l_column_full",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_four_in_a_row___board.html#a9863f30ed0ad1a74fbd99392100afba0",tooltip="Checks if a column is completely filled."];
+}

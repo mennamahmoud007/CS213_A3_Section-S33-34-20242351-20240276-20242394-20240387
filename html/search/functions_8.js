@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['set_5fboard_5fptr_0',['set_board_ptr',['../class_player.html#a3617a3ad0db435176a06948065f9a3a6',1,'Player']]],
-  ['setup_5fplayers_1',['setup_players',['../class_u_i.html#a6966a040c995b2292e5edddaa94f889a',1,'UI']]]
+  ['line_5fis_5fwin_0',['line_is_win',['../class_numeric_board.html#ac236780978399c19eb7cd42b82e10369',1,'NumericBoard']]],
+  ['load_5fdictionary_1',['load_dictionary',['../class_word_board.html#a1bf898d617c0b2a642f4ffd5e6d9996b',1,'WordBoard']]]
 ];

@@ -1,0 +1,11 @@
+digraph "Player::set_board_ptr"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="Player::set_board_ptr",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Assign the board pointer for the player."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GameManager::GameManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_manager.html#addaf3682d9783bdc432a8e3273b5b92c",tooltip="Construct a game manager with board, players, and UI."];
+}
