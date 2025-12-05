@@ -97,6 +97,7 @@ Move<char>* Misere_UI::get_move(Player<char>* player) {
     if (player->get_type() == PlayerType::HUMAN) {
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
+        return new Move<char>(x, y, player->get_symbol());
     }
     else if (player->get_type() == PlayerType::COMPUTER) {
         Board<char>* b = player->get_board_ptr();
@@ -109,9 +110,10 @@ Move<char>* Misere_UI::get_move(Player<char>* player) {
 
         x = r;
         y = c;
+        return new Move<char>(x, y, player->get_symbol());
     }
 
-    return new Move<char>(x, y, player->get_symbol());
+    
 }
 
 

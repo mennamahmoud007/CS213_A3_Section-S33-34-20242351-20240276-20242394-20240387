@@ -89,6 +89,7 @@ Move<char>* FiveByFive_UI::get_move(Player<char>* player) {
     if (player->get_type() == PlayerType::HUMAN) {
         cout << "\nPlease enter your move x and y (0 to 4): ";
         cin >> x >> y;
+        return new Move<char>(x, y, player->get_symbol());
     }
     else if (player->get_type() == PlayerType::COMPUTER) {
         FiveByFive_Board* fb = (FiveByFive_Board*)player->get_board_ptr();
@@ -99,5 +100,5 @@ Move<char>* FiveByFive_UI::get_move(Player<char>* player) {
         return new Move<char>(r, c, player->get_symbol());
     }
 
-    return new Move<char>(x, y, player->get_symbol());
+    
 }
