@@ -29,3 +29,12 @@ Move<char>* Memory_UI::get_move(Player<char>* player)
 
     return new Move<char>(x, y, player->get_symbol());
 }
+
+void Memory_UI::display_rules() {
+    cout << "\n=== MEMORY TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is 3x3" << endl;
+    cout << "2. Marks become hidden after being placed" << endl;
+    cout << "3. Players must remember previous moves" << endl;
+    cout << "4. First to align 3 hidden marks wins" << endl;
+    cout << "====================================" << endl;
+}

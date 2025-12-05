@@ -91,3 +91,13 @@ Move<char>* Ultimate_UI::get_move(Player<char>* player) {
     return new Move<char>(p.first, p.second, player->get_symbol());
 }
 
+void Ultimate_UI::display_rules() {
+    cout << "\n=== ULTIMATE TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Main board is 3x3, each cell is a 3x3 sub-board" << endl;
+    cout << "2. First move can be anywhere" << endl;
+    cout << "3. Next move must be in the board matching previous move" << endl;
+    cout << "4. Win sub-boards by making 3 in a row" << endl;
+    cout << "5. Win the game by winning 3 sub-boards in a row" << endl;
+    cout << "6. If sent to a won or drawn board, choose any board" << endl;
+    cout << "====================================" << endl;
+}

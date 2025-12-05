@@ -5,16 +5,42 @@
 #include "Ultimate_Board.h"
 #include <string>
 
+/**
+ * @class Ultimate_UI
+ * @brief Handles UI interaction for Ultimate Tic Tac Toe.
+ */
 class Ultimate_UI : public UI<char> {
 public:
+    /** Constructor */
     Ultimate_UI();
-    Player<char>* create_player(string& name, char symbol, PlayerType type) override;
-    Move<char>* get_move(Player<char>* player) override;
-    void display_board_matrix(const vector<vector<char>>& matrix) const override {
-        // Made it virtual in framework so it can be overridden in Ultimate_UI
-    }
-    void display_rules();
 
+    /**
+     * @brief Create a player for the Ultimate Board game.
+     * @param name Player name.
+     * @param symbol Player symbol (X or O).
+     * @param type Human or AI.
+     * @return Pointer to created player.
+     */
+    Player<char>* create_player(string& name, char symbol, PlayerType type) override;
+
+    /**
+     * @brief Get player's move: select sub-board + cell inside it.
+     * @param player Pointer to current player.
+     * @return Pointer to Move object.
+     */
+    Move<char>* get_move(Player<char>* player) override;
+
+    /**
+     * @brief Overridden display for custom Ultimate board printing.
+     */
+    void display_board_matrix(const vector<vector<char>>& matrix) const override {
+        // Made virtual in framework so Ultimate_UI can override it
+    }
+
+    /**
+     * @brief Display Ultimate Tic Tac Toe rules.
+     */
+    void display_rules();
 };
 
-#endif 
+#endif

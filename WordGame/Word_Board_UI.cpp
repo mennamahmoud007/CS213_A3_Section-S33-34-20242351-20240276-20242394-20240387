@@ -126,7 +126,7 @@ Move<char>* WordUI::get_move(Player<char>* player) {
     return new Move<char>(x, y, letter);
 }
 
-void WordUI::display_word_rules() {
+void WordUI::display_rules() {
     cout << "\n=== WORD TIC-TAC-TOE RULES ===" << endl;
     cout << "1. Place letters to form 3-letter words" << endl;
     cout << "2. Words can be horizontal, vertical, or diagonal" << endl;
