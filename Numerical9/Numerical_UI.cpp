@@ -59,6 +59,17 @@ Move<int>* NumericalUI::get_move(Player<int>* player) {
     }
 }
 
+void NumericalUI::display_rules() {
+    cout << "\n=== NUMERICAL TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is 3x3" << endl;
+    cout << "2. Player 1 uses odd numbers" << endl;
+    cout << "3. Player 2 uses even numbers" << endl;
+    cout << "4. Each number can be used once" << endl;
+    cout << "5. Any line summing to 15 wins" << endl;
+    cout << "====================================" << endl;
+}
+
+
 //void NumericalUI::print_game_result(NumericBoard& board) {
 //    cout << "Game over!\n";
 //    if (board.is_draw(nullptr)) cout << "It's a draw!\n";

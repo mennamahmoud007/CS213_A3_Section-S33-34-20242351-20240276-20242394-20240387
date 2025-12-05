@@ -76,6 +76,16 @@ void SUS_UI::choose_best_move(SUS_Board* sb, char aiSym, int& bestR, int& bestC)
     }
 }
 
+void SUS_UI::display_rules() {
+    cout << "\n=== SUS GAME RULES ===" << endl;
+    cout << "1. Board is 3x3" << endl;
+    cout << "2. Player 1 uses S, Player 2 uses U" << endl;
+    cout << "3. Forming S-U-S scores a point" << endl;
+    cout << "4. Winner is the one with the most sequences" << endl;
+    cout << "========================" << endl;
+}
+
+
 Player<char>* SUS_UI::create_player(string& name, char symbol, PlayerType type) {
     p++;
     char assigned = (p == 1 ? 'S' : 'U');

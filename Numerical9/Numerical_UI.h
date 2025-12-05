@@ -18,6 +18,7 @@ public:
     Player<int>* create_player(string& name, int symbol, PlayerType type) override;
     Move<int>* get_move(Player<int>* player) override;
     //void print_game_result(NumericBoard& board);
+    void display_rules();
 };
 
 #endif

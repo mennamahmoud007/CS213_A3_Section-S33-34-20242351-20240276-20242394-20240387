@@ -15,7 +15,7 @@ public:
     void choose_best_move(SUS_Board* sb, char aiSym, int& bestR, int& bestC);
     Player<char>* create_player(string& name, char symbol, PlayerType type) override;
     Move<char>* get_move(Player<char>* player) override;
-
+    void display_rules();
 
     //void print_game_result(SUS_Board& board);
 };

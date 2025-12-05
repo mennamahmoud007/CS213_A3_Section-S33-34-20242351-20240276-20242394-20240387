@@ -103,3 +103,11 @@ Move<char>* Diamond_UI::get_move(Player<char>* player) {
     }
     return new Move<char>(x, y, player->get_symbol());
 }
+void Diamond_UI::display_rules() {
+    cout << "\n=== DIAMOND TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is diamond-shaped 5x5" << endl;
+    cout << "2. Goal: complete two lines at once" << endl;
+    cout << "3. One line must have length 3" << endl;
+    cout << "4. The other must have length 4" << endl;
+    cout << "===================================" << endl;
+}

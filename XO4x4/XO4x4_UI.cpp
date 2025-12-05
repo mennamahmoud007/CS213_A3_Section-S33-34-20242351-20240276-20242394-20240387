@@ -113,6 +113,15 @@ Move<char>* XO4x4_UI::get_move(Player<char>* player) {
 }
 
 
+void XO4x4_UI::display_rules() {
+    cout << "\n=== 4x4 MOVING TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is 4x4" << endl;
+    cout << "2. Each player has 4 tokens" << endl;
+    cout << "3. After all tokens are placed, players move them" << endl;
+    cout << "4. Moves allowed only to adjacent cells" << endl;
+    cout << "5. First to make 3 in a row wins" << endl;
+    cout << "======================================" << endl;
+}
 
 
 

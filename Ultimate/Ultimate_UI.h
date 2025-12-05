@@ -13,6 +13,7 @@ public:
     void display_board_matrix(const vector<vector<char>>& matrix) const override {
         // Made it virtual in framework so it can be overridden in Ultimate_UI
     }
+    void display_rules();
 
 };
 

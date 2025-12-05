@@ -54,6 +54,15 @@ int FourInARow_UI::choose_best_column(FourInARow_Board* fb, char aiSym)
     return valid[0];
 }
 
+void FourInARow_UI::display_rules() {
+    cout << "\n=== Connect 4 RULES ===" << endl;
+    cout << "1. Board is 6x7" << endl;
+    cout << "2. Pick a column, piece falls downward" << endl;
+    cout << "3. First to connect 4 wins" << endl;
+    cout << "=============================" << endl;
+}
+
+
 Player<char>* FourInARow_UI::create_player(string& name, char symbol, PlayerType type) {
     cout << "Creating " << (type == PlayerType::HUMAN ? "human" : "computer")
         << " player: " << name << " (" << symbol << ")" << endl;

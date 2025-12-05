@@ -102,3 +102,11 @@ Move<char>* FiveByFive_UI::get_move(Player<char>* player) {
 
     
 }
+
+void FiveByFive_UI::display_rules() {
+    cout << "\n=== 5x5 TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is 5x5" << endl;
+    cout << "2. Goal is to form the most 3-in-a-row lines" << endl;
+    cout << "3. Game ends after 24 moves" << endl;
+    cout << "===============================" << endl;
+}

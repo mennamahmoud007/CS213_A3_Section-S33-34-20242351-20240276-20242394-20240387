@@ -30,5 +30,13 @@ Move<char>* ObstaclesUI::get_move(Player<char>* player)
     return new Move<char>(x, y, player->get_symbol());
 }
 
+void ObstaclesUI::display_rules() {
+    cout << "\n=== OBSTACLES TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is 6x6" << endl;
+    cout << "2. Players place marks normally" << endl;
+    cout << "3. After each round, 2 obstacles appear" << endl;
+    cout << "4. First to connect 4 wins" << endl;
+    cout << "=====================================" << endl;
+}
 
 

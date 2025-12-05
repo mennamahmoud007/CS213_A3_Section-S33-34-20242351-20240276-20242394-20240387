@@ -59,6 +59,13 @@ Move<char>* PyramidUI::get_move(Player<char>* player)
     return new Move<char>(x, y, player->get_symbol());
 }
 
+void PyramidUI::display_rules() {
+    cout << "\n=== PYRAMID TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board has 3 levels: 5, 3, and 1" << endl;
+    cout << "2. Players place marks on empty cells" << endl;
+    cout << "3. First to make 3 in a row wins" << endl;
+    cout << "====================================" << endl;
+}
 
 
 

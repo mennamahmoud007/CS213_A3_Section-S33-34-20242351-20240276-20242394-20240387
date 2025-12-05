@@ -115,6 +115,15 @@ Move<char>* Misere_UI::get_move(Player<char>* player) {
 
     
 }
+void Misere_UI::display_rules() {
+    cout << "\n=== MISERE TIC-TAC-TOE RULES ===" << endl;
+    cout << "1. Board is 3x3" << endl;
+    cout << "2. Play X and O normally" << endl;
+    cout << "3. BUT forming 3 in a row makes you lose" << endl;
+    cout << "4. Avoid completing any line" << endl;
+    cout << "==================================" << endl;
+}
+
 
 
 
