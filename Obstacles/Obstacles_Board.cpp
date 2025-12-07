@@ -113,7 +113,15 @@ bool ObstaclesBoard::is_win(Player<char>* player)
 
 bool ObstaclesBoard::is_draw(Player<char>* player)
 {
-	return n_moves >= 36;
+	for (int r = 0; r < rows; r++) {
+		for (int c = 0; c < columns; c++) {
+			if (board[r][c] == blank_symbol) {
+				return false;   
+			}
+		}
+	}
+
+	return !check_4_in_row(player->get_symbol());
 }
 
 bool ObstaclesBoard::game_is_over(Player<char>* player)
