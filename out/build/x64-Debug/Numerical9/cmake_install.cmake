@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/Numerical9
+# Install script for directory: C:/Users/HP/source/repos/mennamahmoud007/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/Numerical9
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/HP/source/repos/mennamahmoud007/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,6 +35,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Yasmine/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/install_local_manifest.txt"
+  file(WRITE "C:/Users/HP/source/repos/mennamahmoud007/CS213_A3_Section-S33-34-20242351-20240276-20242394-20240387/out/build/x64-Debug/Numerical9/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
