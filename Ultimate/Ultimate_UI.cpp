@@ -63,6 +63,7 @@ Move<char>* Ultimate_UI::get_move(Player<char>* player) {
     }
 
     // COMPUTER case
+    ub->display_board();
     vector<pair<int, int>> candidates;
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
