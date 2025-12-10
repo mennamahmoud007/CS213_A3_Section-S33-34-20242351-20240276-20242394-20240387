@@ -5,6 +5,11 @@ This repository contains implementations of **14 different Tic-Tac-Toe inspired 
 
 Each game is written in C++ following the project framework, with full OOP structure separation into classes, boards, players, move mechanics and game engines
 
+## 📂 iMPORTANT LINKS
+Document Link: https://drive.google.com/file/d/1pqfqLCrQIblNphOnNCNuePMo2KPHLaci/view?usp=drive_link
+Video Link: https://drive.google.com/file/d/11nBErs8TI_rETjawXMNHEHpcAPwK5UNV/view?usp=sharing 
+
+---
 
 ## 📌 List of Implemented Games & Descriptions
 
@@ -112,5 +117,3 @@ Each game is written in C++ following the project framework, with full OOP struc
 - **Winning:** First to align 3 hidden marks.
 
 ---
-
-## 📂 Repository Structure
